@@ -14,11 +14,15 @@ class User(db.Model, UserMixin):
     last_name = db.Column(db.String(40))
     hashed_password = db.Column(db.String(255), nullable=False)
     remaining_fetches = db.Column(db.Integer)
-    last_fetch = db.Column(db.DateTime,  nullable=False, default=datetime.now())
-    init_value = db.Column(db.Numeric(10,2), nullable=False, default=500000.00)
-    cash_value = db.Column(db.Numeric(10,2),  nullable=False, default=500000.00)
-    assets_value = db.Column(db.Numeric(10,2), nullable=False, default=0.00)
+    last_fetch = db.Column(db.DateTime,  nullable=False, default=datetime.utcnow())
+    init_value = db.Column(db.Integer, nullable=False, default=50000000)
+    cash_value = db.Column(db.Integer,  nullable=False, default=50000000)
+    assets_value = db.Column(db.Integer, nullable=False, default=0)
     value_history = db.Column(db.Text)
+
+    team_stocks = db.relationship("TeamStock", back_populates="user")
+    player_stocks = db.relationship("PlayerStock", back_populates="user")
+
 
     @property
     def password(self):
@@ -35,5 +39,15 @@ class User(db.Model, UserMixin):
         return {
             'id': self.id,
             'username': self.username,
-            'email': self.email
+            'email': self.email,
+            'first_name': self.first_name,
+            'last_name': self.last_name,
+            'remaining_fetches': self.remaining_fetches,
+            'last_fetch': self.last_fetch,
+            'init_value': self.init_value,
+            'cash_value': self.cash_value,
+            'assets_value': self.assets_value,
+            'value_history': self.value_history,
+            'team_stocks': [team_stock.to_dict() for team_stock in self.team_stocks],
+            'player_stocks': [player_stock.to_dict() for player_stock in self.player_stocks]
         }
