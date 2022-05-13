@@ -1,0 +1,335 @@
+{
+    "teams": [
+        {
+            "city": "Atlanta",
+            "code": "ATL",
+            "id": "1",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png",
+            "name": "Atlanta Hawks",
+            "conference": "East",
+            "division": "Southeast",
+            "win_loss_ratio": "524",
+            "games_played": "82"
+        },
+        {
+            "code": "BOS",
+            "id": "2",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png",
+            "name": "Boston Celtics",
+            "city": "Boston",
+            "conference": "East",
+            "division": "Atlantic",
+            "win_loss_ratio": "537",
+            "games_played": "82"
+        },
+        {
+            "city": "Brooklyn",
+            "code": "BKN",
+            "id": "4",
+            "conference": "East",
+            "division": "Atlantic",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/130px-Brooklyn_Nets_newlogo.svg.png",
+            "name": "Brooklyn Nets",
+            "win_loss_ratio": "622",
+            "games_played": "82"
+        },
+        {
+            "city": "Charlotte",
+            "code": "CHA",
+            "id": "5",
+            "conference": "East",
+            "division": "Southeast",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png",
+            "name": "Charlotte Hornets",
+            "win_loss_ratio": "524",
+            "games_played": "82"
+        },
+        {
+            "city": "Chicago",
+            "code": "CHI",
+            "id": "6",
+            "conference": "East",
+            "division": "Central",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png",
+            "name": "Chicago Bulls",
+            "win_loss_ratio": "561",
+            "games_played": "82"
+        },
+        {
+            "city": "Cleveland",
+            "code": "CLE",
+            "id": "7",
+            "conference": "East",
+            "division": "Central",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/06/Cavs_de_Cleveland_logo_2017.png/150px-Cavs_de_Cleveland_logo_2017.png",
+            "name": "Cleveland Cavaliers",
+            "win_loss_ratio": "537",
+            "games_played": "82"
+        },
+        {
+            "city": "Dallas",
+            "code": "DAL",
+            "id": "8",
+            "conference": "West",
+            "division": "Southwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b8/Mavericks_de_Dallas_logo.svg/150px-Mavericks_de_Dallas_logo.svg.png",
+            "name": "Dallas Mavericks",
+            "win_loss_ratio": "634",
+            "games_played": "82"
+        },
+        {
+            "city": "Denver",
+            "code": "DEN",
+            "id": "9",
+            "conference": "West",
+            "division": "Northwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/35/Nuggets_de_Denver_2018.png/180px-Nuggets_de_Denver_2018.png",
+            "name": "Denver Nuggets",
+            "win_loss_ratio": "585",
+            "games_played": "82"
+        },
+        {
+            "city": "Detroit",
+            "code": "DET",
+            "id": "10",
+            "conference": "East",
+            "division": "Central",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Detroit_Pistons_primary_logo_2017.png/150px-Detroit_Pistons_primary_logo_2017.png",
+            "name": "Detroit Pistons",
+            "win_loss_ratio": "280",
+            "games_played": "82"
+        },
+        {
+            "city": "Golden State",
+            "code": "GSW",
+            "id": "11",
+            "conference": "West",
+            "division": "Pacific",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Warriors_de_Golden_State_logo.svg/1200px-Warriors_de_Golden_State_logo.svg.png",
+            "name": "Golden State Warriors",
+            "win_loss_ratio": "646",
+            "games_played": "82"
+        },
+        {
+            "city": "Houston",
+            "code": "HOU",
+            "id": "14",
+            "conference": "West",
+            "division": "Southwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Houston_Rockets_logo_2003.png/330px-Houston_Rockets_logo_2003.png",
+            "name": "Houston Rockets",
+            "win_loss_ratio": "244",
+            "games_played": "82"
+        },
+        {
+            "city": "Indiana",
+            "code": "IND",
+            "id": "15",
+            "conference": "East",
+            "division": "Central",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/cf/Pacers_de_l%27Indiana_logo.svg/1180px-Pacers_de_l%27Indiana_logo.svg.png",
+            "name": "Indiana Pacers",
+            "win_loss_ratio": "305",
+            "games_played": "82"
+        },
+        {
+            "city": "Los Angeles",
+            "code": "LAC",
+            "id": "16",
+            "conference": "West",
+            "division": "Pacific",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/d/d6/Los_Angeles_Clippers_logo_2010.png",
+            "name": "LA Clippers",
+            "win_loss_ratio": "512",
+            "games_played": "82"
+        },
+        {
+            "city": "Los Angeles",
+            "code": "LAL",
+            "id": "17",
+            "conference": "West",
+            "division": "Pacific",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/220px-Los_Angeles_Lakers_logo.svg.png",
+            "name": "Los Angeles Lakers",
+            "win_loss_ratio": "402",
+            "games_played": "82"
+        },
+        {
+            "city": "Memphis",
+            "code": "MEM",
+            "id": "19",
+            "conference": "West",
+            "division": "Southwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/1200px-Memphis_Grizzlies.svg.png",
+            "name": "Memphis Grizzlies",
+            "win_loss_ratio": "683",
+            "games_played": "82"
+        },
+        {
+            "city": "Miami",
+            "code": "MIA",
+            "id": "20",
+            "conference": "East",
+            "division": "Southeast",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1c/Miami_Heat_-_Logo.svg/1200px-Miami_Heat_-_Logo.svg.png",
+            "name": "Miami Heat",
+            "win_loss_ratio": "646",
+            "games_played": "82"
+        },
+        {
+            "city": "Milwaukee",
+            "code": "MIL",
+            "id": "21",
+            "conference": "East",
+            "division": "Central",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png",
+            "name": "Milwaukee Bucks",
+            "win_loss_ratio": "622",
+            "games_played": "82"
+        },
+        {
+            "city": "Minnesota",
+            "code": "MIN",
+            "id": "22",
+            "conference": "West",
+            "division": "Northwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Timberwolves_du_Minnesota_logo_2017.png/200px-Timberwolves_du_Minnesota_logo_2017.png",
+            "name": "Minnesota Timberwolves",
+            "win_loss_ratio": "561",
+            "games_played": "82"
+
+        },
+        {
+            "city": "New Orleans",
+            "code": "NOP",
+            "id": "23",
+            "conference": "West",
+            "division": "Southwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/21/New_Orleans_Pelicans.png/200px-New_Orleans_Pelicans.png",
+            "name": "New Orleans Pelicans",
+            "win_loss_ratio": "439",
+            "games_played": "82"
+        },
+        {
+            "city": "New York",
+            "code": "NYK",
+            "id": "24",
+            "conference": "East",
+            "division": "Atlantic",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/d/dc/NY_Knicks_Logo_2011.png",
+            "name": "New York Knicks",
+            "win_loss_ratio": "451",
+            "games_played": "82"
+        },
+        {
+            "city": "Oklahoma City",
+            "code": "OKC",
+            "id": "25",
+            "conference": "West",
+            "division": "Northwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Thunder_d%27Oklahoma_City_logo.svg/1200px-Thunder_d%27Oklahoma_City_logo.svg.png",
+            "name": "Oklahoma City Thunder",
+            "win_loss_ratio": "293",
+            "games_played": "82"
+        },
+        {
+            "city": "Orlando",
+            "code": "ORL",
+            "id": "26",
+            "conference": "East",
+            "division": "Southeast",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/b/bd/Orlando_Magic_logo_2010.png",
+            "name": "Orlando Magic",
+            "win_loss_ratio": "268",
+            "games_played": "82"
+        },
+        {
+            "city": "Philadelphia",
+            "code": "PHI",
+            "id": "27",
+            "conference": "East",
+            "division": "Atlantic",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png",
+            "name": "Philadelphia 76ers",
+            "win_loss_ratio": "622",
+            "games_played": "82"
+        },
+        {
+            "city": "Phoenix",
+            "code": "PHX",
+            "id": "28",
+            "conference": "West",
+            "division": "Pacific",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/5/56/Phoenix_Suns_2013.png",
+            "name": "Phoenix Suns",
+            "win_loss_ratio": "780",
+            "games_played": "82"
+        },
+        {
+            "city": "Portland",
+            "code": "POR",
+            "id": "29",
+            "conference": "West",
+            "division": "Northwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png",
+            "name": "Portland Trail Blazers",
+            "win_loss_ratio": "329",
+            "games_played": "82"
+        },
+        {
+            "city": "Sacramento",
+            "code": "SAC",
+            "id": "30",
+            "conference": "West",
+            "division": "Pacific",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/95/Kings_de_Sacramento_logo.svg/1200px-Kings_de_Sacramento_logo.svg.png",
+            "name": "Sacramento Kings",
+            "win_loss_ratio": "366",
+            "games_played": "82"
+        },
+        {
+            "city": "San Antonio",
+            "code": "SAS",
+            "id": "31",
+            "conference": "West",
+            "division": "Southwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/0/0e/San_Antonio_Spurs_2018.png",
+            "name": "San Antonio Spurs",
+            "win_loss_ratio": "415",
+            "games_played": "82"
+        },
+        {
+            "city": "Toronto",
+            "code": "TOR",
+            "id": "38",
+            "conference": "East",
+            "division": "Atlantic",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/8/89/Raptors2015.png",
+            "name": "Toronto Raptors",
+            "win_loss_ratio": "585",
+            "games_played": "82"
+        },
+        {
+            "city": "Utah",
+            "code": "UTA",
+            "id": "40",
+            "conference": "West",
+            "division": "Northwest",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/3/3b/Jazz_de_l%27Utah_logo.png",
+            "name": "Utah Jazz",
+            "win_loss_ratio": "598",
+            "games_played": "82"
+        },
+        {
+            "city": "Washington",
+            "code": "WAS",
+            "id": "41",
+            "conference": "East",
+            "division": "Southeast",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/archive/d/d6/20161212034849%21Wizards2015.png",
+            "name": "Washington Wizards",
+            "win_loss_ratio": "427",
+            "games_played": "82"
+        }
+    ]
+}

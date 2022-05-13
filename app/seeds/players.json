@@ -1,0 +1,1652 @@
+{
+    "players": [
+        {
+            "gamnes_played": 91,
+            "id": 2051,
+            "name": "Max Strus",
+            "position": null,
+            "ppg": 1033,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 62,
+            "id": 8,
+            "name": "LaMarcus Aldridge",
+            "position": "C",
+            "ppg": 1034,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 86,
+            "id": 18,
+            "name": "Kyle Anderson",
+            "position": null,
+            "ppg": 728,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 84,
+            "id": 20,
+            "name": "Giannis Antetokounmpo",
+            "position": null,
+            "ppg": 2855,
+            "team_id": 21
+        },
+        {
+            "gamnes_played": 77,
+            "id": 21,
+            "name": "Carmelo Anthony",
+            "position": null,
+            "ppg": 1268,
+            "team_id": 17
+        },
+        {
+            "gamnes_played": 71,
+            "id": 820,
+            "name": "Kyle Kuzma",
+            "position": "PF",
+            "ppg": 1661,
+            "team_id": 41
+        },
+        {
+            "gamnes_played": 81,
+            "id": 36,
+            "name": "Harrison Barnes",
+            "position": "SF",
+            "ppg": 1636,
+            "team_id": 30
+        },
+        {
+            "gamnes_played": 83,
+            "id": 38,
+            "name": "Will Barton",
+            "position": null,
+            "ppg": 1370,
+            "team_id": 9
+        },
+        {
+            "gamnes_played": 46,
+            "id": 45,
+            "name": "Bradley Beal",
+            "position": "SG",
+            "ppg": 2113,
+            "team_id": 41
+        },
+        {
+            "gamnes_played": 91,
+            "id": 46,
+            "name": "Malik Beasley",
+            "position": null,
+            "ppg": 1155,
+            "team_id": 22
+        },
+        {
+            "gamnes_played": 72,
+            "id": 53,
+            "name": "Patrick Beverley",
+            "position": null,
+            "ppg": 864,
+            "team_id": 22
+        },
+        {
+            "gamnes_played": 79,
+            "id": 60,
+            "name": "Bojan Bogdanovic",
+            "position": null,
+            "ppg": 1753,
+            "team_id": 40
+        },
+        {
+            "gamnes_played": 87,
+            "id": 2110,
+            "name": "Oshae Brissett",
+            "position": null,
+            "ppg": 729,
+            "team_id": 15
+        },
+        {
+            "gamnes_played": 95,
+            "id": 64,
+            "name": "Devin Booker",
+            "position": null,
+            "ppg": 2191,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 82,
+            "id": 2115,
+            "name": "Amir Coffey",
+            "position": "PF",
+            "ppg": 813,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 49,
+            "id": 71,
+            "name": "Malcolm Brogdon",
+            "position": "SG",
+            "ppg": 1467,
+            "team_id": 15
+        },
+        {
+            "gamnes_played": 79,
+            "id": 75,
+            "name": "Jaylen Brown",
+            "position": "SG",
+            "ppg": 2262,
+            "team_id": 2
+        },
+        {
+            "gamnes_played": 84,
+            "id": 82,
+            "name": "Reggie Bullock",
+            "position": null,
+            "ppg": 853,
+            "team_id": 8
+        },
+        {
+            "gamnes_played": 85,
+            "id": 84,
+            "name": "Alec Burks",
+            "position": null,
+            "ppg": 1142,
+            "team_id": 24
+        },
+        {
+            "gamnes_played": 76,
+            "id": 86,
+            "name": "Jimmy Butler",
+            "position": null,
+            "ppg": 2029,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 80,
+            "id": 89,
+            "name": "Kentavious Caldwell-Pope",
+            "position": "SF",
+            "ppg": 1304,
+            "team_id": 41
+        },
+        {
+            "gamnes_played": 83,
+            "id": 92,
+            "name": "Clint Capela",
+            "position": null,
+            "ppg": 1029,
+            "team_id": 1
+        },
+        {
+            "gamnes_played": 90,
+            "id": 2146,
+            "name": "Naz Reid",
+            "position": null,
+            "ppg": 786,
+            "team_id": 22
+        },
+        {
+            "gamnes_played": 91,
+            "id": 109,
+            "name": "Jordan Clarkson",
+            "position": null,
+            "ppg": 1567,
+            "team_id": 40
+        },
+        {
+            "gamnes_played": 82,
+            "id": 114,
+            "name": "Mike Conley",
+            "position": "PG",
+            "ppg": 1310,
+            "team_id": 40
+        },
+        {
+            "gamnes_played": 81,
+            "id": 115,
+            "name": "Pat Connaughton",
+            "position": null,
+            "ppg": 960,
+            "team_id": 21
+        },
+        {
+            "gamnes_played": 92,
+            "id": 121,
+            "name": "Jae Crowder",
+            "position": null,
+            "ppg": 839,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 77,
+            "id": 118,
+            "name": "Robert Covington",
+            "position": "PF",
+            "ppg": 844,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 85,
+            "id": 123,
+            "name": "Seth Curry",
+            "position": "SG",
+            "ppg": 1240,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 80,
+            "id": 124,
+            "name": "Stephen Curry",
+            "position": "SG",
+            "ppg": 2556,
+            "team_id": 11
+        },
+        {
+            "gamnes_played": 51,
+            "id": 126,
+            "name": "Anthony Davis",
+            "position": "PF",
+            "ppg": 1925,
+            "team_id": 17
+        },
+        {
+            "gamnes_played": 86,
+            "id": 136,
+            "name": "DeMar DeRozan",
+            "position": "PF",
+            "ppg": 2673,
+            "team_id": 6
+        },
+        {
+            "gamnes_played": 84,
+            "id": 142,
+            "name": "Spencer Dinwiddie",
+            "position": "PG",
+            "ppg": 1327,
+            "team_id": 8
+        },
+        {
+            "gamnes_played": 85,
+            "id": 147,
+            "name": "Andre Drummond",
+            "position": "C",
+            "ppg": 792,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 64,
+            "id": 153,
+            "name": "Kevin Durant",
+            "position": null,
+            "ppg": 2864,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 85,
+            "id": 159,
+            "name": "Joel Embiid",
+            "position": null,
+            "ppg": 2705,
+            "team_id": 27
+        },
+        {
+            "gamnes_played": 97,
+            "id": 175,
+            "name": "Dorian Finney-Smith",
+            "position": null,
+            "ppg": 1074,
+            "team_id": 8
+        },
+        {
+            "gamnes_played": 93,
+            "id": 176,
+            "name": "Bryn Forbes",
+            "position": null,
+            "ppg": 802,
+            "team_id": 9
+        },
+        {
+            "gamnes_played": 85,
+            "id": 177,
+            "name": "Evan Fournier",
+            "position": "SG",
+            "ppg": 1369,
+            "team_id": 24
+        },
+        {
+            "gamnes_played": 78,
+            "id": 181,
+            "name": "Danilo Gallinari",
+            "position": null,
+            "ppg": 1094,
+            "team_id": 1
+        },
+        {
+            "gamnes_played": 37,
+            "id": 189,
+            "name": "Paul George",
+            "position": null,
+            "ppg": 2170,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 79,
+            "id": 192,
+            "name": "Rudy Gobert",
+            "position": null,
+            "ppg": 1432,
+            "team_id": 40
+        },
+        {
+            "gamnes_played": 85,
+            "id": 195,
+            "name": "Aaron Gordon",
+            "position": "PF",
+            "ppg": 1449,
+            "team_id": 9
+        },
+        {
+            "gamnes_played": 66,
+            "id": 196,
+            "name": "Eric Gordon",
+            "position": "SF",
+            "ppg": 1168,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 54,
+            "id": 200,
+            "name": "Jerami Grant",
+            "position": "PF",
+            "ppg": 1811,
+            "team_id": 10
+        },
+        {
+            "gamnes_played": 86,
+            "id": 207,
+            "name": "Jeff Green",
+            "position": "C",
+            "ppg": 957,
+            "team_id": 9
+        },
+        {
+            "gamnes_played": 47,
+            "id": 215,
+            "name": "Tim Hardaway Jr.",
+            "position": "SG",
+            "ppg": 1343,
+            "team_id": 8
+        },
+        {
+            "gamnes_played": 86,
+            "id": 216,
+            "name": "James Harden",
+            "position": null,
+            "ppg": 1964,
+            "team_id": 27
+        },
+        {
+            "gamnes_played": 77,
+            "id": 218,
+            "name": "Montrezl Harrell",
+            "position": null,
+            "ppg": 1294,
+            "team_id": 5
+        },
+        {
+            "gamnes_played": 83,
+            "id": 220,
+            "name": "Gary Harris",
+            "position": "SG",
+            "ppg": 849,
+            "team_id": 26
+        },
+        {
+            "gamnes_played": 92,
+            "id": 222,
+            "name": "Tobias Harris",
+            "position": null,
+            "ppg": 1602,
+            "team_id": 27
+        },
+        {
+            "gamnes_played": 54,
+            "id": 227,
+            "name": "Gordon Hayward",
+            "position": "SF",
+            "ppg": 1454,
+            "team_id": 5
+        },
+        {
+            "gamnes_played": 84,
+            "id": 236,
+            "name": "Buddy Hield",
+            "position": null,
+            "ppg": 1551,
+            "team_id": 15
+        },
+        {
+            "gamnes_played": 85,
+            "id": 242,
+            "name": "Jrue Holiday",
+            "position": null,
+            "ppg": 1709,
+            "team_id": 21
+        },
+        {
+            "gamnes_played": 77,
+            "id": 243,
+            "name": "Justin Holiday",
+            "position": "PG",
+            "ppg": 994,
+            "team_id": 30
+        },
+        {
+            "gamnes_played": 83,
+            "id": 248,
+            "name": "Al Horford",
+            "position": null,
+            "ppg": 1033,
+            "team_id": 2
+        },
+        {
+            "gamnes_played": 72,
+            "id": 260,
+            "name": "Brandon Ingram",
+            "position": "SF",
+            "ppg": 2054,
+            "team_id": 23
+        },
+        {
+            "gamnes_played": 40,
+            "id": 261,
+            "name": "Kyrie Irving",
+            "position": null,
+            "ppg": 2288,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 83,
+            "id": 264,
+            "name": "Reggie Jackson",
+            "position": "SG",
+            "ppg": 1613,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 67,
+            "id": 265,
+            "name": "LeBron James",
+            "position": null,
+            "ppg": 2528,
+            "team_id": 17
+        },
+        {
+            "gamnes_played": 69,
+            "id": 2327,
+            "name": "Garrison Mathews",
+            "position": null,
+            "ppg": 959,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 86,
+            "id": 279,
+            "name": "Nikola Jokic",
+            "position": null,
+            "ppg": 2579,
+            "team_id": 9
+        },
+        {
+            "gamnes_played": 91,
+            "id": 285,
+            "name": "Tyus Jones",
+            "position": null,
+            "ppg": 851,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 76,
+            "id": 308,
+            "name": "Zach LaVine",
+            "position": "SG",
+            "ppg": 2387,
+            "team_id": 6
+        },
+        {
+            "gamnes_played": 64,
+            "id": 317,
+            "name": "Caris LeVert",
+            "position": null,
+            "ppg": 1584,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 32,
+            "id": 319,
+            "name": "Damian Lillard",
+            "position": "PG",
+            "ppg": 2269,
+            "team_id": 29
+        },
+        {
+            "gamnes_played": 82,
+            "id": 326,
+            "name": "Kevin Love",
+            "position": null,
+            "ppg": 1288,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 77,
+            "id": 327,
+            "name": "Kyle Lowry",
+            "position": "PG",
+            "ppg": 1170,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 80,
+            "id": 331,
+            "name": "Trey Lyles",
+            "position": null,
+            "ppg": 1018,
+            "team_id": 30
+        },
+        {
+            "gamnes_played": 73,
+            "id": 347,
+            "name": "CJ McCollum",
+            "position": "SG",
+            "ppg": 2195,
+            "team_id": 23
+        },
+        {
+            "gamnes_played": 56,
+            "id": 351,
+            "name": "Doug McDermott",
+            "position": "PF",
+            "ppg": 1118,
+            "team_id": 31
+        },
+        {
+            "gamnes_played": 90,
+            "id": 353,
+            "name": "JaVale McGee",
+            "position": null,
+            "ppg": 888,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 83,
+            "id": 355,
+            "name": "Ben McLemore",
+            "position": null,
+            "ppg": 795,
+            "team_id": 29
+        },
+        {
+            "gamnes_played": 78,
+            "id": 361,
+            "name": "Khris Middleton",
+            "position": null,
+            "ppg": 1792,
+            "team_id": 21
+        },
+        {
+            "gamnes_played": 90,
+            "id": 365,
+            "name": "Patty Mills",
+            "position": null,
+            "ppg": 1078,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 64,
+            "id": 373,
+            "name": "Marcus Morris Sr.",
+            "position": null,
+            "ppg": 1358,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 76,
+            "id": 382,
+            "name": "Dejounte Murray",
+            "position": "PG",
+            "ppg": 2025,
+            "team_id": 31
+        },
+        {
+            "gamnes_played": 93,
+            "id": 391,
+            "name": "Georges Niang",
+            "position": "PF",
+            "ppg": 852,
+            "team_id": 27
+        },
+        {
+            "gamnes_played": 61,
+            "id": 398,
+            "name": "Jusuf Nurkic",
+            "position": "C",
+            "ppg": 1444,
+            "team_id": 29
+        },
+        {
+            "gamnes_played": 83,
+            "id": 407,
+            "name": "Kelly Oubre Jr.",
+            "position": null,
+            "ppg": 1380,
+            "team_id": 5
+        },
+        {
+            "gamnes_played": 84,
+            "id": 415,
+            "name": "Chris Paul",
+            "position": null,
+            "ppg": 1427,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 85,
+            "id": 417,
+            "name": "Cameron Payne",
+            "position": "PG",
+            "ppg": 835,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 75,
+            "id": 428,
+            "name": "Jakob Poeltl",
+            "position": "C",
+            "ppg": 1275,
+            "team_id": 31
+        },
+        {
+            "gamnes_played": 84,
+            "id": 430,
+            "name": "Otto Porter Jr.",
+            "position": null,
+            "ppg": 748,
+            "team_id": 11
+        },
+        {
+            "gamnes_played": 88,
+            "id": 431,
+            "name": "Bobby Portis",
+            "position": null,
+            "ppg": 1324,
+            "team_id": 21
+        },
+        {
+            "gamnes_played": 58,
+            "id": 432,
+            "name": "Kristaps Porzingis",
+            "position": "PF",
+            "ppg": 1843,
+            "team_id": 41
+        },
+        {
+            "gamnes_played": 98,
+            "id": 433,
+            "name": "Dwight Powell",
+            "position": null,
+            "ppg": 811,
+            "team_id": 8
+        },
+        {
+            "gamnes_played": 51,
+            "id": 434,
+            "name": "Norman Powell",
+            "position": "SF",
+            "ppg": 1814,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 76,
+            "id": 441,
+            "name": "Julius Randle",
+            "position": "PF",
+            "ppg": 1996,
+            "team_id": 24
+        },
+        {
+            "gamnes_played": 73,
+            "id": 446,
+            "name": "Josh Richardson",
+            "position": null,
+            "ppg": 958,
+            "team_id": 31
+        },
+        {
+            "gamnes_played": 80,
+            "id": 457,
+            "name": "Terrence Ross",
+            "position": "SF",
+            "ppg": 838,
+            "team_id": 26
+        },
+        {
+            "gamnes_played": 80,
+            "id": 458,
+            "name": "Terry Rozier",
+            "position": "PG",
+            "ppg": 1826,
+            "team_id": 5
+        },
+        {
+            "gamnes_played": 76,
+            "id": 462,
+            "name": "D'Angelo Russell",
+            "position": "PG",
+            "ppg": 1742,
+            "team_id": 22
+        },
+        {
+            "gamnes_played": 67,
+            "id": 463,
+            "name": "Domantas Sabonis",
+            "position": "PF",
+            "ppg": 1828,
+            "team_id": 30
+        },
+        {
+            "gamnes_played": 69,
+            "id": 472,
+            "name": "Dennis Schroder",
+            "position": null,
+            "ppg": 1284,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 78,
+            "id": 479,
+            "name": "Pascal Siakam",
+            "position": null,
+            "ppg": 2164,
+            "team_id": 38
+        },
+        {
+            "gamnes_played": 83,
+            "id": 486,
+            "name": "Marcus Smart",
+            "position": "PG",
+            "ppg": 1195,
+            "team_id": 2
+        },
+        {
+            "gamnes_played": 86,
+            "id": 2561,
+            "name": "Precious Achiuwa",
+            "position": null,
+            "ppg": 915,
+            "team_id": 38
+        },
+        {
+            "gamnes_played": 49,
+            "id": 514,
+            "name": "Klay Thompson",
+            "position": null,
+            "ppg": 1727,
+            "team_id": 11
+        },
+        {
+            "gamnes_played": 78,
+            "id": 2563,
+            "name": "Cole Anthony",
+            "position": "PG",
+            "ppg": 1441,
+            "team_id": 26
+        },
+        {
+            "gamnes_played": 82,
+            "id": 2566,
+            "name": "LaMelo Ball",
+            "position": "SG",
+            "ppg": 1955,
+            "team_id": 5
+        },
+        {
+            "gamnes_played": 97,
+            "id": 2568,
+            "name": "Desmond Bane",
+            "position": null,
+            "ppg": 1695,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 87,
+            "id": 2569,
+            "name": "Saddiq Bey",
+            "position": null,
+            "ppg": 1538,
+            "team_id": 10
+        },
+        {
+            "gamnes_played": 92,
+            "id": 520,
+            "name": "P.J. Tucker",
+            "position": "PF",
+            "ppg": 702,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 87,
+            "id": 525,
+            "name": "Jonas Valanciunas",
+            "position": null,
+            "ppg": 1689,
+            "team_id": 23
+        },
+        {
+            "gamnes_played": 77,
+            "id": 527,
+            "name": "Fred VanVleet",
+            "position": "PG",
+            "ppg": 1857,
+            "team_id": 38
+        },
+        {
+            "gamnes_played": 82,
+            "id": 534,
+            "name": "Nikola Vucevic",
+            "position": "C",
+            "ppg": 1761,
+            "team_id": 6
+        },
+        {
+            "gamnes_played": 84,
+            "id": 2584,
+            "name": "Anthony Edwards",
+            "position": "SG",
+            "ppg": 2110,
+            "team_id": 22
+        },
+        {
+            "gamnes_played": 85,
+            "id": 544,
+            "name": "Russell Westbrook",
+            "position": null,
+            "ppg": 1739,
+            "team_id": 17
+        },
+        {
+            "gamnes_played": 80,
+            "id": 2595,
+            "name": "Tyrese Haliburton",
+            "position": "SG",
+            "ppg": 1505,
+            "team_id": 15
+        },
+        {
+            "gamnes_played": 90,
+            "id": 548,
+            "name": "Andrew Wiggins",
+            "position": "SF",
+            "ppg": 1605,
+            "team_id": 11
+        },
+        {
+            "gamnes_played": 73,
+            "id": 560,
+            "name": "Christian Wood",
+            "position": "PF",
+            "ppg": 1742,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 87,
+            "id": 519,
+            "name": "Karl-Anthony Towns",
+            "position": "C",
+            "ppg": 2332,
+            "team_id": 22
+        },
+        {
+            "gamnes_played": 86,
+            "id": 2617,
+            "name": "Kenyon Martin Jr.",
+            "position": "PF",
+            "ppg": 850,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 95,
+            "id": 2619,
+            "name": "Tyrese Maxey",
+            "position": null,
+            "ppg": 1684,
+            "team_id": 27
+        },
+        {
+            "gamnes_played": 82,
+            "id": 2621,
+            "name": "Jaden McDaniels",
+            "position": null,
+            "ppg": 890,
+            "team_id": 22
+        },
+        {
+            "gamnes_played": 82,
+            "id": 575,
+            "name": "Ivica Zubac",
+            "position": "C",
+            "ppg": 1001,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 75,
+            "id": 2630,
+            "name": "Isaac Okoro",
+            "position": null,
+            "ppg": 827,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 83,
+            "id": 2636,
+            "name": "Immanuel Quickley",
+            "position": "PG",
+            "ppg": 1112,
+            "team_id": 24
+        },
+        {
+            "gamnes_played": 77,
+            "id": 2648,
+            "name": "Isaiah Stewart",
+            "position": "C",
+            "ppg": 810,
+            "team_id": 10
+        },
+        {
+            "gamnes_played": 82,
+            "id": 2650,
+            "name": "Jae'Sean Tate",
+            "position": null,
+            "ppg": 1143,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 79,
+            "id": 2658,
+            "name": "Obi Toppin",
+            "position": "PF",
+            "ppg": 882,
+            "team_id": 24
+        },
+        {
+            "gamnes_played": 79,
+            "id": 2661,
+            "name": "Devin Vassell",
+            "position": null,
+            "ppg": 1191,
+            "team_id": 31
+        },
+        {
+            "gamnes_played": 85,
+            "id": 2564,
+            "name": "Deni Avdija",
+            "position": null,
+            "ppg": 822,
+            "team_id": 41
+        },
+        {
+            "gamnes_played": 75,
+            "id": 724,
+            "name": "Bam Adebayo",
+            "position": "C",
+            "ppg": 1712,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 64,
+            "id": 727,
+            "name": "Jarrett Allen",
+            "position": "C",
+            "ppg": 1512,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 59,
+            "id": 732,
+            "name": "OG Anunoby",
+            "position": "SF",
+            "ppg": 1700,
+            "team_id": 38
+        },
+        {
+            "gamnes_played": 76,
+            "id": 743,
+            "name": "Bogdan Bogdanovic",
+            "position": "SG",
+            "ppg": 1350,
+            "team_id": 1
+        },
+        {
+            "gamnes_played": 48,
+            "id": 749,
+            "name": "Dillon Brooks",
+            "position": null,
+            "ppg": 1502,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 86,
+            "id": 2799,
+            "name": "Josh Christopher",
+            "position": "SF",
+            "ppg": 776,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 89,
+            "id": 2802,
+            "name": "Ayo Dosunmu",
+            "position": "SF",
+            "ppg": 864,
+            "team_id": 6
+        },
+        {
+            "gamnes_played": 77,
+            "id": 2801,
+            "name": "Cade Cunningham",
+            "position": null,
+            "ppg": 1447,
+            "team_id": 10
+        },
+        {
+            "gamnes_played": 67,
+            "id": 2803,
+            "name": "Chris Duarte",
+            "position": null,
+            "ppg": 1157,
+            "team_id": 15
+        },
+        {
+            "gamnes_played": 63,
+            "id": 761,
+            "name": "John Collins",
+            "position": "PF",
+            "ppg": 1556,
+            "team_id": 1
+        },
+        {
+            "gamnes_played": 74,
+            "id": 2810,
+            "name": "Jalen Green",
+            "position": null,
+            "ppg": 1635,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 88,
+            "id": 2816,
+            "name": "Bones Hyland",
+            "position": "PG",
+            "ppg": 955,
+            "team_id": 9
+        },
+        {
+            "gamnes_played": 94,
+            "id": 2822,
+            "name": "Herbert Jones",
+            "position": null,
+            "ppg": 923,
+            "team_id": 23
+        },
+        {
+            "gamnes_played": 89,
+            "id": 2827,
+            "name": "Jonathan Kuminga",
+            "position": "PF",
+            "ppg": 833,
+            "team_id": 11
+        },
+        {
+            "gamnes_played": 73,
+            "id": 2831,
+            "name": "Tre Mann",
+            "position": null,
+            "ppg": 900,
+            "team_id": 25
+        },
+        {
+            "gamnes_played": 77,
+            "id": 2835,
+            "name": "Evan Mobley",
+            "position": null,
+            "ppg": 1445,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 62,
+            "id": 791,
+            "name": "Josh Hart",
+            "position": null,
+            "ppg": 1326,
+            "team_id": 29
+        },
+        {
+            "gamnes_played": 78,
+            "id": 2847,
+            "name": "Alperen Sengun",
+            "position": "C",
+            "ppg": 953,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 67,
+            "id": 804,
+            "name": "Frank Jackson",
+            "position": null,
+            "ppg": 896,
+            "team_id": 10
+        },
+        {
+            "gamnes_played": 88,
+            "id": 2855,
+            "name": "Cam Thomas",
+            "position": null,
+            "ppg": 695,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 85,
+            "id": 2858,
+            "name": "Franz Wagner",
+            "position": "PF",
+            "ppg": 1445,
+            "team_id": 26
+        },
+        {
+            "gamnes_played": 75,
+            "id": 814,
+            "name": "Luke Kennard",
+            "position": null,
+            "ppg": 1184,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 83,
+            "id": 2864,
+            "name": "Ziaire Williams",
+            "position": "SF",
+            "ppg": 751,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 69,
+            "id": 830,
+            "name": "Lauri Markkanen",
+            "position": null,
+            "ppg": 1441,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 77,
+            "id": 840,
+            "name": "Donovan Mitchell",
+            "position": "SG",
+            "ppg": 2501,
+            "team_id": 40
+        },
+        {
+            "gamnes_played": 83,
+            "id": 842,
+            "name": "Malik Monk",
+            "position": null,
+            "ppg": 1308,
+            "team_id": 17
+        },
+        {
+            "gamnes_played": 85,
+            "id": 845,
+            "name": "Monte Morris",
+            "position": "PG",
+            "ppg": 1224,
+            "team_id": 9
+        },
+        {
+            "gamnes_played": 78,
+            "id": 854,
+            "name": "Cedi Osman",
+            "position": null,
+            "ppg": 956,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 89,
+            "id": 851,
+            "name": "Royce O'Neale",
+            "position": "SF",
+            "ppg": 710,
+            "team_id": 40
+        },
+        {
+            "gamnes_played": 90,
+            "id": 882,
+            "name": "Jayson Tatum",
+            "position": "SF",
+            "ppg": 2619,
+            "team_id": 2
+        },
+        {
+            "gamnes_played": 89,
+            "id": 897,
+            "name": "Derrick White",
+            "position": "SG",
+            "ppg": 1248,
+            "team_id": 2
+        },
+        {
+            "gamnes_played": 85,
+            "id": 926,
+            "name": "Grayson Allen",
+            "position": "SG",
+            "ppg": 1028,
+            "team_id": 21
+        },
+        {
+            "gamnes_played": 90,
+            "id": 930,
+            "name": "Deandre Ayton",
+            "position": "C",
+            "ppg": 1407,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 76,
+            "id": 932,
+            "name": "Mo Bamba",
+            "position": null,
+            "ppg": 1055,
+            "team_id": 26
+        },
+        {
+            "gamnes_played": 98,
+            "id": 940,
+            "name": "Mikal Bridges",
+            "position": "SF",
+            "ppg": 1389,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 85,
+            "id": 941,
+            "name": "Miles Bridges",
+            "position": "PF",
+            "ppg": 1969,
+            "team_id": 5
+        },
+        {
+            "gamnes_played": 88,
+            "id": 944,
+            "name": "Bruce Brown",
+            "position": "SG",
+            "ppg": 847,
+            "team_id": 4
+        },
+        {
+            "gamnes_played": 95,
+            "id": 946,
+            "name": "Jalen Brunson",
+            "position": null,
+            "ppg": 1682,
+            "team_id": 8
+        },
+        {
+            "gamnes_played": 70,
+            "id": 950,
+            "name": "Wendell Carter Jr.",
+            "position": "C",
+            "ppg": 1401,
+            "team_id": 26
+        },
+        {
+            "gamnes_played": 73,
+            "id": 960,
+            "name": "Hamidou Diallo",
+            "position": null,
+            "ppg": 918,
+            "team_id": 10
+        },
+        {
+            "gamnes_played": 80,
+            "id": 963,
+            "name": "Luka Doncic",
+            "position": "PG",
+            "ppg": 2723,
+            "team_id": 8
+        },
+        {
+            "gamnes_played": 60,
+            "id": 972,
+            "name": "Shai Gilgeous-Alexander",
+            "position": "PG",
+            "ppg": 2335,
+            "team_id": 25
+        },
+        {
+            "gamnes_played": 90,
+            "id": 973,
+            "name": "Devonte' Graham",
+            "position": "PG",
+            "ppg": 1066,
+            "team_id": 23
+        },
+        {
+            "gamnes_played": 86,
+            "id": 980,
+            "name": "Kevin Huerter",
+            "position": null,
+            "ppg": 1164,
+            "team_id": 1
+        },
+        {
+            "gamnes_played": 95,
+            "id": 982,
+            "name": "Jaren Jackson Jr.",
+            "position": "PF",
+            "ppg": 1597,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 90,
+            "id": 998,
+            "name": "De'Anthony Melton",
+            "position": "SG",
+            "ppg": 992,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 96,
+            "id": 1018,
+            "name": "Duncan Robinson",
+            "position": "SF",
+            "ppg": 996,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 79,
+            "id": 1020,
+            "name": "Mitchell Robinson",
+            "position": null,
+            "ppg": 780,
+            "team_id": 24
+        },
+        {
+            "gamnes_played": 86,
+            "id": 1022,
+            "name": "Landry Shamet",
+            "position": "SG",
+            "ppg": 767,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 62,
+            "id": 1023,
+            "name": "Anfernee Simons",
+            "position": null,
+            "ppg": 1648,
+            "team_id": 29
+        },
+        {
+            "gamnes_played": 78,
+            "id": 1038,
+            "name": "Lonnie Walker IV",
+            "position": null,
+            "ppg": 1154,
+            "team_id": 31
+        },
+        {
+            "gamnes_played": 71,
+            "id": 1045,
+            "name": "Robert Williams III",
+            "position": "C",
+            "ppg": 914,
+            "team_id": 2
+        },
+        {
+            "gamnes_played": 88,
+            "id": 1046,
+            "name": "Trae Young",
+            "position": "PG",
+            "ppg": 2668,
+            "team_id": 1
+        },
+        {
+            "gamnes_played": 82,
+            "id": 1058,
+            "name": "Gary Trent Jr.",
+            "position": null,
+            "ppg": 1734,
+            "team_id": 38
+        },
+        {
+            "gamnes_played": 78,
+            "id": 1859,
+            "name": "Daniel Gafford",
+            "position": "C",
+            "ppg": 923,
+            "team_id": 41
+        },
+        {
+            "gamnes_played": 91,
+            "id": 745,
+            "name": "Chris Boucher",
+            "position": null,
+            "ppg": 902,
+            "team_id": 38
+        },
+        {
+            "gamnes_played": 86,
+            "id": 2789,
+            "name": "Scottie Barnes",
+            "position": null,
+            "ppg": 1435,
+            "team_id": 38
+        },
+        {
+            "gamnes_played": 90,
+            "id": 1775,
+            "name": "Gabe Vincent",
+            "position": null,
+            "ppg": 762,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 59,
+            "id": 2808,
+            "name": "Josh Giddey",
+            "position": null,
+            "ppg": 1234,
+            "team_id": 25
+        },
+        {
+            "gamnes_played": 87,
+            "id": 1845,
+            "name": "Nickeil Alexander-Walker",
+            "position": null,
+            "ppg": 869,
+            "team_id": 40
+        },
+        {
+            "gamnes_played": 75,
+            "id": 1846,
+            "name": "RJ Barrett",
+            "position": "SF",
+            "ppg": 1955,
+            "team_id": 24
+        },
+        {
+            "gamnes_played": 73,
+            "id": 1847,
+            "name": "Darius Bazley",
+            "position": "PF",
+            "ppg": 1053,
+            "team_id": 25
+        },
+        {
+            "gamnes_played": 85,
+            "id": 1853,
+            "name": "Brandon Clarke",
+            "position": null,
+            "ppg": 1009,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 76,
+            "id": 1860,
+            "name": "Darius Garland",
+            "position": "PG",
+            "ppg": 2074,
+            "team_id": 7
+        },
+        {
+            "gamnes_played": 68,
+            "id": 776,
+            "name": "De'Aaron Fox",
+            "position": "PG",
+            "ppg": 2096,
+            "team_id": 30
+        },
+        {
+            "gamnes_played": 93,
+            "id": 1864,
+            "name": "Jaxson Hayes",
+            "position": null,
+            "ppg": 754,
+            "team_id": 23
+        },
+        {
+            "gamnes_played": 88,
+            "id": 1866,
+            "name": "Tyler Herro",
+            "position": "SG",
+            "ppg": 1853,
+            "team_id": 20
+        },
+        {
+            "gamnes_played": 71,
+            "id": 1867,
+            "name": "Talen Horton-Tucker",
+            "position": "SG",
+            "ppg": 892,
+            "team_id": 17
+        },
+        {
+            "gamnes_played": 66,
+            "id": 1868,
+            "name": "De'Andre Hunter",
+            "position": null,
+            "ppg": 1324,
+            "team_id": 1
+        },
+        {
+            "gamnes_played": 85,
+            "id": 1871,
+            "name": "Cameron Johnson",
+            "position": "PF",
+            "ppg": 1169,
+            "team_id": 28
+        },
+        {
+            "gamnes_played": 87,
+            "id": 1877,
+            "name": "Terance Mann",
+            "position": null,
+            "ppg": 1070,
+            "team_id": 16
+        },
+        {
+            "gamnes_played": 81,
+            "id": 1872,
+            "name": "Keldon Johnson",
+            "position": "SF",
+            "ppg": 1689,
+            "team_id": 31
+        },
+        {
+            "gamnes_played": 74,
+            "id": 1881,
+            "name": "Ja Morant",
+            "position": "PG",
+            "ppg": 2565,
+            "team_id": 19
+        },
+        {
+            "gamnes_played": 75,
+            "id": 1883,
+            "name": "Chuma Okeke",
+            "position": null,
+            "ppg": 807,
+            "team_id": 26
+        },
+        {
+            "gamnes_played": 91,
+            "id": 1887,
+            "name": "Jordan Poole",
+            "position": "PG",
+            "ppg": 1884,
+            "team_id": 11
+        },
+        {
+            "gamnes_played": 66,
+            "id": 1888,
+            "name": "Kevin Porter Jr.",
+            "position": "PG",
+            "ppg": 1536,
+            "team_id": 14
+        },
+        {
+            "gamnes_played": 73,
+            "id": 1897,
+            "name": "P.J. Washington",
+            "position": null,
+            "ppg": 981,
+            "team_id": 5
+        },
+        {
+            "gamnes_played": 70,
+            "id": 1900,
+            "name": "Coby White",
+            "position": null,
+            "ppg": 1163,
+            "team_id": 6
+        },
+        {
+            "gamnes_played": 90,
+            "id": 1901,
+            "name": "Grant Williams",
+            "position": null,
+            "ppg": 797,
+            "team_id": 2
+        },
+        {
+            "gamnes_played": 87,
+            "id": 2825,
+            "name": "Corey Kispert",
+            "position": "SF",
+            "ppg": 761,
+            "team_id": 41
+        },
+        {
+            "gamnes_played": 80,
+            "id": 2834,
+            "name": "Davion Mitchell",
+            "position": "PG",
+            "ppg": 1145,
+            "team_id": 30
+        },
+        {
+            "gamnes_played": 56,
+            "id": 2040,
+            "name": "Luguentz Dort",
+            "position": "SF",
+            "ppg": 1645,
+            "team_id": 25
+        }
+    ]
+}
