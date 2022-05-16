@@ -8,7 +8,9 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
 import User from './components/User';
 import { authenticate } from './store/session';
-
+import Homepage from './components/homepage';
+import {GetAllTeams} from "./store/team"
+import TeamPage from './components/TeamPage';
 function App() {
   const [loaded, setLoaded] = useState(false);
   const dispatch = useDispatch();
@@ -20,7 +22,14 @@ function App() {
     })();
   }, [dispatch]);
 
-  if (!loaded) {
+  useEffect(() => {
+    (async () => {
+        await dispatch(GetAllTeams());
+
+    })();
+    }, [dispatch]);
+
+    if (!loaded) {
     return null;
   }
 
@@ -41,7 +50,10 @@ function App() {
           <User />
         </ProtectedRoute>
         <ProtectedRoute path='/' exact={true} >
-          <h1>My Home Page</h1>
+          <Homepage />
+        </ProtectedRoute>
+        <ProtectedRoute path='/teams/:id' >
+          <TeamPage />
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>
