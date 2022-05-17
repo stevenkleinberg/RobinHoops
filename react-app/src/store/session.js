@@ -1,6 +1,7 @@
 // constants
 const SET_USER = 'session/SET_USER';
 const REMOVE_USER = 'session/REMOVE_USER';
+const EDIT_USER_STOCKS = 'session/EDIT_USER'
 
 const setUser = (user) => ({
   type: SET_USER,
@@ -11,6 +12,10 @@ const removeUser = () => ({
   type: REMOVE_USER,
 })
 
+const editUser = (user) => ({
+  type: EDIT_USER_STOCKS,
+  user
+})
 const initialState = { user: null };
 
 export const authenticate = () => async (dispatch) => {
@@ -24,7 +29,7 @@ export const authenticate = () => async (dispatch) => {
     if (data.errors) {
       return;
     }
-  
+
     dispatch(setUser(data));
   }
 }
@@ -40,8 +45,8 @@ export const login = (email, password) => async (dispatch) => {
       password
     })
   });
-  
-  
+
+
   if (response.ok) {
     const data = await response.json();
     dispatch(setUser(data))
@@ -82,7 +87,7 @@ export const signUp = (username, email, password) => async (dispatch) => {
       password,
     }),
   });
-  
+
   if (response.ok) {
     const data = await response.json();
     dispatch(setUser(data))
@@ -97,12 +102,42 @@ export const signUp = (username, email, password) => async (dispatch) => {
   }
 }
 
+
+export const buyTeamStock = (teamStock) => async (dispatch) => {
+  //RETURNS THE USER WITH CHANGED TEAMSTOCK ARRAY
+  const response = await fetch('/api/teams/buy', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(teamStock),
+  });
+
+  if (response.ok) {
+    const data = await response.json();
+    dispatch(editUser(data));
+    return data
+  } else if (response.status < 500) {
+    const data = await response.json();
+    if (data.errors) {
+      return data.errors;
+    }
+  } else {
+    return ['An error occurred. Please try again.']
+  }
+};
+
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case SET_USER:
       return { user: action.payload }
     case REMOVE_USER:
       return { user: null }
+    case EDIT_USER_STOCKS:{
+      const newState = { ...state}
+      newState.user = action.user;
+      return newState
+    }
     default:
       return state;
   }

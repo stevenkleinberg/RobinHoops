@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import StockList from './stocklist'
-import TeamDetailCard from "./detailCard/teamDetail";
+import UserDetail from "./detailCard/UserDetail";
 import { useSelector, useDispatch } from "react-redux";
 
 
@@ -15,7 +15,7 @@ function Homepage() {
     return (
         <div className='homepage_container flex-row'>
             <div className='homepage_right flex-column'>
-                {/* <DetailCard /> */}
+               <UserDetail />
             </div>
             <div className='homepage_left flex-column'>
                 <StockList />

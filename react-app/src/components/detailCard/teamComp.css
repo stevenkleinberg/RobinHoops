@@ -1,0 +1,57 @@
+.DetailCard_container{
+    border: 1px solid orange;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.detailcard_top{
+    padding-bottom: 35px;
+    border-bottom: 2px dotted rgb(64,73,78);
+}
+.detailcard_header{
+    font-size: 32px;
+    font-weight:bold;
+}
+.current_price{
+    font-size: 32px;
+}
+.price_change{
+    font-size: 13px;
+}
+
+.detailcard_chartSection{
+    border: 1px solid blue;
+    height: 300px;
+}
+
+.about{
+    border: 1px solid green;
+    margin-top: 35px;
+
+}
+.about_header{
+    font-size: 32px;
+    font-weight:bold;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(64,73,78);
+}
+
+.about_info{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_label{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.info_detail{
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}

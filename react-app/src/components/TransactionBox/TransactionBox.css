@@ -1,0 +1,80 @@
+.transactionBox_container{
+    border: 1px solid orange;
+    padding: 10px;
+    width: 80%;
+
+}
+.transactionBox_body{
+    border: 2px solid rgb(64,73,78);
+    border-radius: 5px;
+    background-color: rgb(30,33,36);
+    height: 365px;
+    color: white;
+    align-items: center;
+    scrollbar-width: none;
+    font-size: 20px;
+}
+
+.transactionBox_header{
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(30,33,36);
+    align-items: center;
+    justify-content:center;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 2px solid  rgb(64,73,78);
+}
+
+.transactionBox_row{
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.transactionBox_total{
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid  rgb(64,73,78);
+}
+
+.transactionBox_button{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 2px solid rgb(64,73,78);
+    border-radius: 5px;
+    background-color:  rgb(30,33,36);
+    color:white;
+    font-size: 20px;
+}
+
+.transactionBox_button:hover{
+    background-color: rgb(64,73,78);
+}
+
+.transactionForm_bottom{
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.transactionForm_input{
+    background-color: rgb(64,73,78);
+    width: 60px;
+    height: 30px;
+    color: white;
+    box-shadow: none;
+    border-style: none;
+    text-align: center;
+
+
+}

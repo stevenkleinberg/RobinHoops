@@ -1,6 +1,5 @@
 import json
 import os
-from turtle import position
 from app.models import db, Player
 
 
