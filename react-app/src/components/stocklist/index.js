@@ -1,11 +1,13 @@
 import React from 'react'
-import TeamStockList from './teamStockList'
+import AllTeamsList from './AllTeamsList';
+import MyTeamsList from './MyTeamsList';
 import "./stocklist.css"
 import { useSelector } from "react-redux";
 
 
 function StockList() {
     const teams = useSelector(state => state.teams.all)
+    const team_stocks = useSelector(state => state.session.user.team_stocks)
     return (
         <div className='stocklist_container '>
             <div className='stocklist_body flex-column'>
@@ -13,7 +15,8 @@ function StockList() {
                     Stocks
                 </div>
                 <div className='stocklist_main flex-column'>
-                    <TeamStockList teams={teams} />
+                    <MyTeamsList team_stocks={team_stocks} />
+                    <AllTeamsList teams={teams} />
                     <div className='stocklist_players flex-column '>
                         <p> Player Stocks List</p>
                     </div>

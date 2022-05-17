@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import StockCard from './StockCard'
-
-function TeamStockList({ teams }) {
+import MyTeamStockCard from "./MyTeamStockCard";
+function MyTeamsList({team_stocks}) {
     const [showDropdown, setShowDropdown] = useState(false);
-
-    const openDropdown = () => {
+    const openDropdown = ({team_stocks}) => {
         if (showDropdown) return;
         setShowDropdown(true);
     };
@@ -20,19 +18,18 @@ function TeamStockList({ teams }) {
 
         return () => document.removeEventListener("click", closeDropdown);
     }, [showDropdown]);
-
     return (
         <div className='stocklist_teams flex-column '>
             <div className='stockListHeader flex-row'>
-                <p>Team Stocks</p>
+                <p>My Teams</p>
                 <div className='dropdown_btn' onClick={openDropdown}>
                     &or;
                 </div>
             </div>
             {showDropdown && (
                 <div className='stocklist_dropdown'>
-                    {teams.map(team => (
-                        <StockCard team={team} key={team.id} />
+                    {team_stocks.map(team_stock => (
+                        <MyTeamStockCard team_stock={team_stock} key={team_stock.id} />
                     ))}
                 </div>
             )}
@@ -40,4 +37,4 @@ function TeamStockList({ teams }) {
     )
 }
 
-export default TeamStockList
+export default MyTeamsList
