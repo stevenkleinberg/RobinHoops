@@ -10,7 +10,9 @@ import User from './components/User';
 import { authenticate } from './store/session';
 import Homepage from './components/homepage';
 import {GetAllTeams} from "./store/team"
+import { GetAllPlayers } from "./store/player"
 import TeamPage from './components/TeamPage';
+import PlayerPage from './components/PlayerPage';
 function App() {
   const [loaded, setLoaded] = useState(false);
   const dispatch = useDispatch();
@@ -25,7 +27,7 @@ function App() {
   useEffect(() => {
     (async () => {
         await dispatch(GetAllTeams());
-
+        await dispatch(GetAllPlayers())
     })();
     }, [dispatch]);
 
@@ -54,6 +56,9 @@ function App() {
         </ProtectedRoute>
         <ProtectedRoute path='/teams/:id' >
           <TeamPage />
+        </ProtectedRoute>
+        <ProtectedRoute path='/players/:id' >
+          <PlayerPage />
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>

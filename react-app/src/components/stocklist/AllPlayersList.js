@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import StockCard from './StockCard'
+import PlayerCard from "./PlayerCard";
 
-function AllTeamsList({ teams }) {
+function AllPlayersList({ players }) {
     const [showDropdown, setShowDropdown] = useState(false);
 
     const openDropdown = () => {
@@ -21,10 +21,10 @@ function AllTeamsList({ teams }) {
         return () => document.removeEventListener("click", closeDropdown);
     }, [showDropdown]);
 
-    return (
-        <div className='stocklist_teams flex-column '>
-            <div className='stockListHeader flex-row' onClick={openDropdown}>
-                <p>All Teams</p>
+  return (
+    <div className='stocklist_players flex-column '>
+            <div className='stockListHeader flex-row'  onClick={openDropdown}>
+                <p>All Players</p>
                 {showDropdown && (
                     <div className='dropdown_btn_up' >
                         &#10148;
@@ -38,13 +38,13 @@ function AllTeamsList({ teams }) {
             </div>
             {showDropdown && (
                 <div className='stocklist_dropdown'>
-                    {teams.map(team => (
-                        <StockCard team={team} key={team.id} />
+                    {players.map(player => (
+                        <PlayerCard player={player} key={player.id} />
                     ))}
                 </div>
             )}
         </div>
-    )
+  )
 }
 
-export default AllTeamsList
+export default AllPlayersList

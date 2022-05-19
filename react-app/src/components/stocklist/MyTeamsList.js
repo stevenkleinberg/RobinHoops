@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import MyTeamStockCard from "./MyTeamStockCard";
 function MyTeamsList({team_stocks}) {
     const [showDropdown, setShowDropdown] = useState(false);
-    const openDropdown = ({team_stocks}) => {
+    const openDropdown = () => {
         if (showDropdown) return;
         setShowDropdown(true);
     };
@@ -20,11 +20,18 @@ function MyTeamsList({team_stocks}) {
     }, [showDropdown]);
     return (
         <div className='stocklist_teams flex-column '>
-            <div className='stockListHeader flex-row'>
+            <div className='stockListHeader flex-row' onClick={openDropdown}>
                 <p>My Teams</p>
-                <div className='dropdown_btn' onClick={openDropdown}>
-                    &or;
-                </div>
+                {showDropdown && (
+                    <div className='dropdown_btn_up' >
+                        &#10148;
+                    </div>
+                )}
+                {!showDropdown && (
+                    <div className='dropdown_btn_down' >
+                        &#10148;
+                    </div>
+                )}
             </div>
             {showDropdown && (
                 <div className='stocklist_dropdown'>

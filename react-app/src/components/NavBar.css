@@ -6,15 +6,14 @@
 
   .navbar {
 
-    height: 7vh;
+    height: 80px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 13%;
+    padding: 17px 15%;
     list-style: none;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #303030;
     margin-bottom: 1px;
     z-index: 10;
   }
@@ -37,10 +36,23 @@
 
 
 
-  .navlinks.logo img {
-    width: 40px;
-    height: 40px;
+  .navlinks.logo_main {
+    width: 49px;
+    height: 80px;
+
   }
+
+  .navlinks.logo_main:hover .logo_Top{
+    transform: rotate(320deg);
+  }
+
+  .logo_Top{
+    height: 30px;
+    width: 30px;
+    align-self: flex-end;
+    transition: transform .7s ease-in-out;
+  }
+
 
   .userProfileBtn {
     padding: 5px;
@@ -79,12 +91,16 @@
     font-size: large;
   }
 
-  .navbar_input_container {
-    width: 450px;
-    height: 20px;
+  .navbar_search_container{
+    width: 320px;
+    height: 35px;
   }
 
-  .navbar_search {
+  .navbar_search  {
     width: 300px;
     height: 100%;
+    color: white;
+    background-color: rgb(30,33,36);
+    border: 2px solid rgb(64,73,78);
+    border-radius: 5px;
   }

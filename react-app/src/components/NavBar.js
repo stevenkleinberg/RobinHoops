@@ -2,7 +2,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
-import Logo from './icons/logo';
+import LogoBottom from './icons/logoBottom';
+import LogoTop from './icons/LogoTop';
+
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -10,17 +12,16 @@ const NavBar = () => {
     <nav className="navbar">
 
         <div className='navbar_logo_container'>
-          <NavLink to='/' exact={true} className='logo navlinks' activeClassName='active'>
-            <Logo />
+          <NavLink to='/' exact={true} className='logo_main flex-column navlinks' activeClassName='active'>
+            <LogoTop />
+            <LogoBottom />
           </NavLink>
         </div>
         <div className='navbar_search_container'>
-          <div>
             <input
               className="navbar_search"
               placeholder="Search"
             />
-          </div>
         </div>
         <div className='navbar_links_container'>
           <NavLink to='/' exact={true} className="navlinks" activeClassName='active'>
