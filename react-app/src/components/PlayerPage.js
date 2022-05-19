@@ -1,24 +1,24 @@
 import React, { useState, useEffect, } from "react";
 import StockList from './stocklist'
-import TeamDetailCard from "./detailCard/teamDetail";
+import PlayerDetail from "./detailCard/PlayerDetail";
 import { useSelector, useDispatch } from "react-redux";
 import { NavLink, useParams  } from "react-router-dom";
 import TeamTransactionBox from "./TransactionBox/TeamTransactionBox";
-function TeamPage() {
-    const { id }= useParams()
-    const team = useSelector(state => state.teams[id])
+import PlayerTransactionBox from "./TransactionBox/PlayerTransactionBox";
 
+function PlayerPage() {
+    const { id }= useParams()
+    const player = useSelector(state => state.players[id])
   return (
     <div className='homepage_container flex-row'>
             <div className='homepage_right flex-column'>
-                <TeamDetailCard team={team} />
+                <PlayerDetail player={player} />
             </div>
             <div className='homepage_left flex-column'>
-                <TeamTransactionBox team={team}/>
+                <PlayerTransactionBox player={player}/>
             </div>
         </div>
-    )
-
+  )
 }
 
-export default TeamPage
+export default PlayerPage

@@ -1,5 +1,5 @@
 .DetailCard_container{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     padding: 10px;
     width: 100%;
     justify-content: space-between;
@@ -8,6 +8,19 @@
 .detailcard_top{
     padding-bottom: 35px;
     border-bottom: 2px dotted rgb(64,73,78);
+    justify-content: space-between;
+}
+.detailcard_top_right{
+    height: 75px;
+    width: 75px;
+}
+.detailcard_logo img{
+    height: 100%;
+    width:100%;
+}
+.detailcard_app_logo img{
+    height: 150%;
+    width:150%;
 }
 .detailcard_header{
     font-size: 32px;
@@ -21,12 +34,12 @@
 }
 
 .detailcard_chartSection{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 300px;
 }
 
 .about{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-top: 35px;
 
 }

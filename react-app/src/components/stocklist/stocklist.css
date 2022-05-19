@@ -1,8 +1,8 @@
 .stocklist_container{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     padding: 10px;
     width: 80%;
-    height: 79vh;
+    max-height:79vh;
 }
 .stocklist_body{
     border: 2px solid rgb(64,73,78);
@@ -44,7 +44,9 @@
     padding-left: 24px;
     padding-right: 24px;
 }
+
 .stocklist_players{
+    width: 100%;
     min-height: 60px;
     align-items: center;
     justify-content: center;
@@ -58,7 +60,15 @@
     align-items: center;
     justify-content: space-between
 }
+.stockListHeader:hover{
+    font-weight: bold;
+    border-bottom: 2px solid rgb(64,73,78);
+    height: 65px;
+}
 
+.dropdown_btn_up {
+    transform: rotate(90deg);
+}
 .stocklist_dropdown{
     width: 100%;
     height: 100%;
@@ -70,5 +80,22 @@
     height: 52px;
     color: white;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    background-color: inherit;
+}
+.stockCard_body:hover{
+    border-top: 2px solid rgb(64,73,78);
+    border-bottom: 2px solid rgb(64,73,78);
+    height: 60px;
+}
+.stock_logo{
+    align-items: flex-end;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.stock_logo img {
+    max-width: 30px;
+    max-height: 30px;
 }

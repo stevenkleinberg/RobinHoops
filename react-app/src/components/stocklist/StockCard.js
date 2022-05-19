@@ -7,7 +7,7 @@ function StockCard({team}) {
   return (
     <NavLink to={`/teams/${team.id}`} className='stockCard_body flex-row'>
         <div className='stock_Name'>{team.code}</div>
-        <div className='stock_minigraph'> graph soon </div>
+        <div className='stock_logo flex-column'><img src={team.logo}/></div>
         <div className='stock_price'>{`$${displayPrice}`}</div>
     </NavLink>
   )
