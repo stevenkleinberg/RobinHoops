@@ -22,6 +22,6 @@ def username_exists(form, field):
 
 class SignUpForm(FlaskForm):
     username = StringField(
-        'username', validators=[DataRequired(), username_exists])
-    email = StringField('email', validators=[DataRequired(), user_exists])
+        'username', validators=[DataRequired("Must include a username"), username_exists])
+    email = StringField('email', validators=[DataRequired("Must include an Email"),Email("Must include a valid email"), user_exists])
     password = StringField('password', validators=[DataRequired()])

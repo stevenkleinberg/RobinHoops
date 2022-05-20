@@ -23,18 +23,29 @@
     text-decoration: none;
     color: grey;
     text-align: center;
-    justify-self: center;
-    padding: 3px;
+    /* justify-self: center; */
+    padding: 10px 3px 3px 3px;
     font-size: medium;
     cursor: pointer;
     transition: color 0.3s ease;
   }
 
+  .about_links img {
+    justify-self: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    opacity: 1;
+    transition: filter 0.25s;
+  }
+
+  .about_links img:hover{
+    filter: brightness(0) invert(1);
+  }
+
   .navlinks:hover {
     color: white;
   }
-
-
 
   .navlinks.logo_main {
     width: 49px;
@@ -103,4 +114,15 @@
     background-color: rgb(30,33,36);
     border: 2px solid rgb(64,73,78);
     border-radius: 5px;
+  }
+
+  .logout_button{
+    background-color: grey;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid  rgb(64,73,78);
+    border-radius: 5px;
+  }
+  .logout_button:hover{
+    background-color: white;
   }

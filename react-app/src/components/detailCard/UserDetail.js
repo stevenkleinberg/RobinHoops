@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from "react-redux";
-import logo from "../../static/images/greenwithtext-removebg.png"
+import logo from "../../static/images/nba_white.png"
 
 function UserDetail() {
     const user = useSelector(state => state.session.user)
@@ -13,40 +13,40 @@ function UserDetail() {
     const floatTotal = floatAsset + floatCash;
     const displayTotal = (floatTotal / 100).toFixed(2);
     const floatDifference = floatTotal - floatInit;
-    const displayDifference = (floatDifference /100).toFixed(2);
-    const floatPercentChange =((floatDifference * 10000) / floatInit);
-    const displayPercentChange=(floatPercentChange / 100).toFixed(2);
+    const displayDifference = (floatDifference / 100).toFixed(2);
+    const floatPercentChange = ((floatDifference * 10000) / floatInit);
+    const displayPercentChange = (floatPercentChange / 100).toFixed(2);
     const cashPercent = (((floatTotal - floatAsset) * 100 / floatTotal)).toFixed(2)
     const assetPercent = (((floatTotal - floatCash) * 100 / floatTotal)).toFixed(2)
-    let   team_mostShares  = { shares: 0, team_id:-1}
+    let team_mostShares = { shares: 0, team_id: -1 }
     const team_stocks = user?.team_stocks
     team_stocks.forEach((stock) => {
-        if (stock.shares > team_mostShares.shares){
+        if (stock.shares > team_mostShares.shares) {
             team_mostShares = stock
         }
-    } )
-    const team_mostSharesValue = (parseFloat(team_mostShares.current_value) / 100 ).toFixed(2);
+    })
+    const team_mostSharesValue = (parseFloat(team_mostShares.current_value) / 100).toFixed(2);
     const team_mostSharesCode = useSelector(state => state.teams[team_mostShares?.team_id]?.code);
-    let   player_mostShares  = { shares: 0, player_id:-1}
+    let player_mostShares = { shares: 0, player_id: -1 }
     const player_stocks = user?.player_stocks
     player_stocks.forEach((stock) => {
-        if (stock.shares > player_mostShares.shares){
+        if (stock.shares > player_mostShares.shares) {
             player_mostShares = stock
         }
-    } )
-    const player_mostSharesValue = (parseFloat(player_mostShares.current_value) / 100 ).toFixed(2);
+    })
+    const player_mostSharesValue = (parseFloat(player_mostShares.current_value) / 100).toFixed(2);
     const player_mostSharesName = useSelector(state => state.players[player_mostShares?.player_id]?.name);
 
 
-  return (
-    <div className='DetailCard_container flex-column'>
+    return (
+        <div className='DetailCard_container flex-column'>
             <div className='detailcard_top flex-row'>
-            <div className='detailcard_top_right'>
-                <div className='detailcard_header'>Portfollio</div>
-                <div className='detailcard_number_box'>
-                    <div className='current_price'>{"$" + displayTotal}</div>
-                    <div className='price_change'>{`+$${displayDifference} (+${displayPercentChange}%)`}</div>
-                </div>
+                <div className='detailcard_top_left'>
+                    <div className='detailcard_header'>Portfollio</div>
+                    <div className='detailcard_number_box'>
+                        <div className='current_price'>{"$" + displayTotal}</div>
+                        <div className='price_change'>{`+$${displayDifference} (+${displayPercentChange}%)`}</div>
+                    </div>
                 </div>
                 <div className='detailcard_top_right'>
                     <div className='detailcard_app_logo'>
@@ -78,7 +78,7 @@ function UserDetail() {
                         )}
                     </div>
                     <div className='info_column flex-column'>
-                    <p className='info_label'>Largset Player Stake</p>
+                        <p className='info_label'>Largset Player Stake</p>
                         {player_stocks.length > 0 && (
                             <>
                                 <p className='info_detail'>{player_mostSharesName}</p>
@@ -89,7 +89,7 @@ function UserDetail() {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default UserDetail
