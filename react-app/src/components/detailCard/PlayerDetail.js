@@ -2,8 +2,9 @@
 import React from 'react'
 import "./teamComp.css"
 import { useSelector } from "react-redux";
+import PlayerChart from '../chart/PlayerChart';
 function PlayerDetail({ player }) {
-    const team = useSelector(state => state.teams[player.team_id])
+    const team = useSelector(state => state.teams[player?.team_id])
     const floatPrice = parseFloat(player?.current_price);
     const displayPrice = (floatPrice / 100).toFixed(2);
     const floatPPG = parseFloat(player?.ppg);
@@ -21,12 +22,12 @@ function PlayerDetail({ player }) {
                 </div>
                 <div className='detailcard_top_right'>
                     <div className='detailcard_logo'>
-                        <img src={team.logo}/>
+                        <img src={team?.logo} />
                     </div>
                 </div>
             </div>
             <div className='detailcard_chartSection'>
-                <div className='chart'>chart</div>
+                <PlayerChart player={player} />
             </div>
             <div className='about'>
                 <div className='about_header'>About</div>
@@ -37,7 +38,7 @@ function PlayerDetail({ player }) {
                     </div>
                     <div className='info_column flex-column'>
                         <p className='info_label'>Games Played</p>
-                        <p className='info_detail'>{player.games_played}</p>
+                        <p className='info_detail'>{player?.games_played}</p>
                     </div>
                     <div className='info_column flex-column'>
                         <p className='info_label'>Last Five</p>

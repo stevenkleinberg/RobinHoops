@@ -41,33 +41,39 @@ def get_player_by_id(id):
     games_list = json_dict["response"]
 
 
-    total_games = len(games_list)
+    total_games = 0
     total_points = 0
     first_name = games_list[0]["player"]["firstname"]
     last_name = games_list[0]["player"]["lastname"]
     team_id = games_list[-1]["team"]["id"]
-    position= games_list[0]["pos"]
+    position = games_list[0]["pos"]
+    price_history = []
 
     for game in games_list:
         points = game["points"]
-        if position == null and game["pos"]:
+        if game["pos"]:
             position = game["pos"]
         if points:
-         total_points += points
+            total_games += 1
+            total_points += points
+            raw_ppg_at_game = total_points / total_games
+            ppg_at_game = int(round(raw_ppg_at_game , 2) * 1000)
+            price_history.append(ppg_at_game)
+
+
     if total_points < 600:
         return None
     ppg_raw= total_points / total_games
     ppg = int(round(ppg_raw, 2) * 100)
 
-    # print(ppg)
-    # return ppg
     return {
         "id" : id,
         "name" : first_name + " " + last_name,
         "team_id": team_id,
         "position": position,
         "ppg":ppg,
-        "gamnes_played": total_games
+        "games_played": total_games,
+        "price_history":price_history
     }
 
 def get_player_ids_by_team_ids(id):

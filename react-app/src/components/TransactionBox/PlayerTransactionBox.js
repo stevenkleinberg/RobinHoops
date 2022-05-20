@@ -20,7 +20,7 @@ export default function PlayerTransactionBox({ player }) {
     const user = useSelector(state => state.session.user)
     const floatBalance = parseFloat(user.cash_value)
     const displayBalance = (floatBalance / 100).toFixed(2);
-    const splitName = player.name.split(" ")
+    const splitName = player?.name.split(" ")
     const firstInital = splitName[0][0]
     const lastName = splitName[1]
     const displayName =`${firstInital}. ${lastName}`

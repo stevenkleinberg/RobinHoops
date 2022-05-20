@@ -78,7 +78,7 @@ function UserDetail() {
                         )}
                     </div>
                     <div className='info_column flex-column'>
-                    <p className='info_label'>Largset Team Stake</p>
+                    <p className='info_label'>Largset Player Stake</p>
                         {player_stocks.length > 0 && (
                             <>
                                 <p className='info_detail'>{player_mostSharesName}</p>

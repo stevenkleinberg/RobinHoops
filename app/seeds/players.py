@@ -10,15 +10,17 @@ def seed_players():
     data = json.load(f)
 
     for player_dict in data['players']:
+
         new_player = Player(
             id=player_dict["id"],
             name=player_dict["name"],
             team_id=player_dict["team_id"],
             ppg=player_dict["ppg"],
-            games_played=player_dict["gamnes_played"],
+            games_played=player_dict["games_played"],
             position=player_dict["position"],
             init_price=(int(player_dict["ppg"]) *10),
-            current_price=(int(player_dict["ppg"]) *10)
+            current_price=(int(player_dict["ppg"]) *10),
+            price_history=[ int(price) for price in player_dict["price_history"]]
         )
         db.session.add(new_player)
     db.session.commit()
