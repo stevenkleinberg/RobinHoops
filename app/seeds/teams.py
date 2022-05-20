@@ -19,9 +19,10 @@ def seed_teams():
             conference=team_dict["conference"],
             division=team_dict["division"],
             win_loss_ratio=int(team_dict["win_loss_ratio"]),
-            games_played=int(team_dict["games_played"]),
+            games_played=int(len(team_dict["price_history"])),
             init_price=(int(team_dict["win_loss_ratio"]) * 200),
-            current_price=(int(team_dict["win_loss_ratio"]) * 200)
+            current_price=(int(team_dict["win_loss_ratio"]) * 200),
+            price_history=[ int(price) for price in team_dict["price_history"]]
             )
         db.session.add(new_team)
 
