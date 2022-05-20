@@ -24,6 +24,43 @@ def get_team_by_id(id):
 
     return json_dict["response"]
 
+def  get_games_by_team_id(id):
+    url = "https://api-nba-v1.p.rapidapi.com/games"
+
+    querystring = {"season":"2021","team":str(id)}
+
+    headers = {
+        "X-RapidAPI-Host": "api-nba-v1.p.rapidapi.com",
+        "X-RapidAPI-Key": "defda67798msh132ff4fa1fb51bfp1290d3jsn8633cf0b21c0"
+    }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+    data = response.content
+    json_data = json.loads(data)
+    json_dict = dict(json_data)
+    games_list = json_dict["response"]
+
+    total_games = 0
+    total_wins = 0
+    price_history = []
+
+    for game in games_list:
+
+        if game["scores"]["visitors"]["points"]:
+            total_games += 1
+            if game["teams"]["home"]["id"] == id:
+                if game["scores"]["visitors"]["points"] < game["scores"]["home"]["points"]:
+                    total_wins += 1
+            else:
+                if game["scores"]["visitors"]["points"] > game["scores"]["home"]["points"]:
+                    total_wins += 1
+            raw_wlr_at_game = total_wins / total_games
+            wlr_at_game = int(round(raw_wlr_at_game , 3) * 1000)
+            price_history.append(wlr_at_game)
+    return price_history
+
+
+
 def get_player_by_id(id):
     url = "https://api-nba-v1.p.rapidapi.com/players/statistics"
 
@@ -103,11 +140,16 @@ def getNBAteams():
     # nba_team_ids = [1,2]
 
     nba_team_data = list(map(get_team_by_id, nba_team_ids))
-
+    print
     nba_teams = {nba_team_ids[i]: nba_team_data[i] for i in range(len(nba_team_ids))}
 
+    history_dict = {}
+    for id in nba_team_ids:
+        history= get_games_by_team_id(id)
+        print("========historyyyyyyyyy============", "=======", id, "=================", history, "=====================end of teams history=====================")
+        history_dict[id] = history
 
-    return nba_teams
+    return history_dict
 
 
 @nba_routes.route('/players/')

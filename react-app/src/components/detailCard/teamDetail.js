@@ -1,11 +1,12 @@
 import React from 'react'
 import "./teamComp.css"
 
+import TeamChart from '../chart/TeamChart';
 
 function TeamDetailCard({ team }) {
     const floatPrice = parseFloat(team?.current_price);
     const displayPrice = (floatPrice / 100).toFixed(2);
-    const wins = Math.ceil((team?.win_loss_ratio * 82) / 1000);
+    const wins = Math.ceil((team?.win_loss_ratio * team?.games_played) / 1000);
     const losses = team?.games_played - wins;
     const displayRatio = (parseFloat(team?.win_loss_ratio) / 1000).toFixed(3)
     return (
@@ -25,7 +26,7 @@ function TeamDetailCard({ team }) {
                 </div>
             </div>
             <div className='detailcard_chartSection'>
-                <div className='chart'>chart</div>
+                <TeamChart team={team} />
             </div>
             <div className='about'>
                 <div className='about_header'>About</div>
@@ -38,10 +39,7 @@ function TeamDetailCard({ team }) {
                         <p className='info_label'>Conference</p>
                         <p className='info_detail'>{team?.conference}</p>
                     </div>
-                    <div className='info_column flex-column'>
-                        <p className='info_label'>Streak</p>
-                        <p className='info_detail'>Win - 4</p>
-                    </div>
+
                     <div className='info_column flex-column'>
                         <p className='info_label'>Hometown</p>
                         <p className='info_detail'>{team?.city}</p>
