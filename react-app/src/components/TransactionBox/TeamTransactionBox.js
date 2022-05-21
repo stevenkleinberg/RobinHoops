@@ -19,6 +19,7 @@ function TeamTransactionBox({ team }) {
     const user = useSelector(state => state.session.user)
     const floatBalance = parseFloat(user.cash_value)
     const displayBalance = (floatBalance / 100).toFixed(2);
+    const [errors, setErrors] = useState([])
 
     useEffect(() => {
         userTeamstocks.forEach(teamStock => {
@@ -31,11 +32,18 @@ function TeamTransactionBox({ team }) {
 
     const handleShareChange = (e) => {
         e.preventDefault()
-        if (e.target.value >= 0) {
-            setShares(e.target.value)
-            setTotal(floatPrice * e.target.value)
+        const errs = [];
+        if (parseFloat(team.current_price * e.target.value) < floatBalance){
+            if (e.target.value >= 0) {
+                setShares(e.target.value)
+                setTotal(floatPrice * e.target.value)
+            }
+        }else {
+            errs.push(`Insufficient Funds: Max Purchase${parseInt(floatBalance / parseFloat(team.current_price)) } shares`)
+            setShares(0)
+            setTotal(0)
         }
-        setDisplayTotal((total / 100).toFixed(2))
+        setErrors(errs)
     }
 
     useEffect(() => {
@@ -43,25 +51,32 @@ function TeamTransactionBox({ team }) {
     }, [total]);
     const handleSubmit = async (e) => {
         e.preventDefault()
-
-        const newTeamStock = {
-            user_id: user.id,
-            team_id: team.id,
-            shares,
-            purchase_price: floatPrice,
-            current_value: total,
-            }
-        const data = await dispatch(buyTeamStock(newTeamStock))
-        if (data.errors) {
-           console.log("error", data.errors)
-          } else {
-            data.team_stocks?.forEach(teamStock => {
-                if( teamStock.team_id == id) {
-                    setTeamStock(teamStock)
-                    setIsOwned(true)
+        const errs = [];
+        if (!errors.length) {
+            if (shares > 0) {
+                const newTeamStock = {
+                    user_id: user.id,
+                    team_id: team.id,
+                    shares,
+                    purchase_price: floatPrice,
+                    current_value: total,
+                    }
+                const data = await dispatch(buyTeamStock(newTeamStock))
+                if (data.errors) {
+                console.log("error", data.errors)
+                } else {
+                    data.team_stocks?.forEach(teamStock => {
+                        if( teamStock.team_id == id) {
+                            setTeamStock(teamStock)
+                            setIsOwned(true)
+                        }
+                    })
                 }
-            })
-          }
+            }else{
+                errs.push("Cannot transact 0 shares")
+            }
+            setErrors(errs)
+        }
     }
 
     if(isOwned){
@@ -74,6 +89,11 @@ function TeamTransactionBox({ team }) {
             <div className='transactionBox_body flex-column'>
                 <div className='transactionBox_header flex-row'>
                     {`Buy ${team?.code}`}
+                </div>
+                <div className='transactionBox_errors'>
+                    {errors.map((error, ind) => (
+                        <div className='transactionBox_row flex-row' key={ind}>{error}</div>
+                    ))}
                 </div>
                 <div className='transactionBox_main flex-column'>
                     <form className='transactionBox_form' onSubmit={handleSubmit}>
@@ -97,7 +117,7 @@ function TeamTransactionBox({ team }) {
                         </div>
                         <button type="submit" className="transactionBox_button">Purchase</button>
                         <div className="transactionForm_bottom flex-row">
-                            <p className="transactionForm_balance">{`$${displayBalance} Available to trade`}</p>
+                            <p className="transactionForm_balance">{`$${displayBalance} Available`}</p>
                         </div>
                     </form>
                 </div>

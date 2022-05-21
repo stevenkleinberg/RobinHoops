@@ -6,7 +6,7 @@ function TeamChart({ team }) {
     const history_string_array = history_string?.split(",");
     const priceHistory = history_string_array?.map(price => (parseFloat(price) / 100).toFixed(2));
 
-    const zeroIndexrange = [...priceHistory?.keys()];
+    const zeroIndexrange = [...(priceHistory ? priceHistory.keys() : [] )]
     const range = zeroIndexrange?.map(ind => ind + 1)
 
     const layout = {

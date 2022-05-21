@@ -8,7 +8,17 @@
     border: 2px solid rgb(64,73,78);
     border-radius: 5px;
     background-color: rgb(30,33,36);
-    height: 365px;
+    height: 500px;
+    color: white;
+    align-items: center;
+    scrollbar-width: none;
+    font-size: 20px;
+}
+.transactionBox_body_2{
+    border: 2px solid rgb(64,73,78);
+    border-radius: 5px;
+    background-color: rgb(30,33,36);
+    height: 700px;
     color: white;
     align-items: center;
     scrollbar-width: none;
@@ -62,7 +72,10 @@
 }
 
 .transactionForm_bottom{
+
     padding-top: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
     justify-content: center;
     align-items: center;
 }
@@ -77,4 +90,20 @@
     text-align: center;
 
 
+}
+.transactionForm_Type{
+    text-decoration: underline;
+}
+.transactionForm_Type:hover{
+    font-weight: bold;
+}
+.transactionBox_errors{
+    color: red;
+    width: 100%;
+    text-align: center;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
 }
