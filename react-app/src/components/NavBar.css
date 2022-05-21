@@ -47,12 +47,19 @@
     color: white;
   }
 
-  .navlinks.logo_main {
+  .navlinks.logo_main  {
     width: 49px;
     height: 80px;
 
   }
+  .navlinks.home  {
+    margin-right: 15px;
+    padding-left: 0;
+    padding-right: 5px;
 
+    align-self: flex-start;
+
+  }
   .navlinks.logo_main:hover .logo_Top{
     transform: rotate(320deg);
   }

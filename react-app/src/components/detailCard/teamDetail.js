@@ -21,7 +21,7 @@ function TeamDetailCard({ team }) {
                 </div>
                 <div className='detailcard_top_right'>
                     <div className='detailcard_logo'>
-                        <img src={team.logo} />
+                        <img src={team?.logo} />
                     </div>
                 </div>
             </div>

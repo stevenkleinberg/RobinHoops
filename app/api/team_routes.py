@@ -103,3 +103,40 @@ def sell_stock_in_team(id):
 
         #return the associated user to update the state
         return user.to_dict()
+
+
+@team_routes.route('/buy/<int:id>', methods=['PUT'])
+def buy_more_stock_in_team(id):
+    form = TeamStockForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+    if form.validate_on_submit():
+        # grab the Teamstock, Team, and User
+        changed_team_stock = TeamStock.query.get(int(id))
+        team = Team.query.get(form.data["team_id"])
+        user = User.query.get(form.data["user_id"])
+
+        #calculate change in share #
+        orig_shares = changed_team_stock.shares
+        bought_shares = form.data["shares"]
+        new_shares = orig_shares + bought_shares
+
+        #calculate profit/loss from sold shares
+        current_price = team.current_price
+        sale_total = bought_shares * current_price
+
+        #Change teamstock shares
+        changed_team_stock.shares = new_shares
+        changed_team_stock.current_value = changed_team_stock.current_value + sale_total
+
+        #change user's cash and asset value
+        user.cash_value = user.cash_value - sale_total
+        user.assets_value = user.assets_value + sale_total
+
+        #commit new teamstock and changes to user
+        db.session.commit()
+        #return the associated user to update the state
+        return user.to_dict()
+
+    #form validation failed, return error
+    else:
+        return {'errors': form.errors}, 401

@@ -236,7 +236,50 @@ export const SellEntireTeamStock = (id) => async (dispatch) => {
   }
 };
 
-
+export const BuySharesOfTeamStock = (teamStock) => async (dispatch) => {
+  //RETURNS THE USER WITH CHANGED TEAMSTOCK ARRAY AND FINANCES
+  const response = await fetch(`/api/teams/buy/${teamStock.id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(teamStock),
+  });
+  if (response.ok) {
+    const data = await response.json();
+    dispatch(editUser(data));
+    return data
+  } else if (response.status < 500) {
+    const data = await response.json();
+    if (data.errors) {
+      return data.errors;
+    }
+  } else {
+    return ['An error occurred. Please try again.']
+  }
+};
+export const BuySharesOfPlayerStock = (playerStock) => async (dispatch) => {
+  //RETURNS THE USER WITH CHANGED playerSTOCK ARRAY AND FINANCES
+  const response = await fetch(`/api/players/buy/${playerStock.id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(playerStock),
+  });
+  if (response.ok) {
+    const data = await response.json();
+    dispatch(editUser(data));
+    return data
+  } else if (response.status < 500) {
+    const data = await response.json();
+    if (data.errors) {
+      return data.errors;
+    }
+  } else {
+    return ['An error occurred. Please try again.']
+  }
+};
 
 
 
