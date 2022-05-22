@@ -133,3 +133,33 @@
   .logout_button:hover{
     background-color: white;
   }
+  .search_results {
+    position: relative;
+    /* margin-top: 25px; */
+    border-radius: 5px;
+    border: 2px solid rgb(64,73,78);
+    top: 4px;
+    width: 295px;
+    height: 180px;
+    overflow-y: scroll;
+    background-color: rgb(30,33,36);
+
+
+  }
+.search_results_li {
+  list-style: none;
+  color: white;
+  border-bottom: 1px solid lightgrey;
+  padding: 5px;
+  align-items: center;
+  background-color: rgb(30,33,36);
+}
+.search_results_li:hover {
+  list-style: none;
+  background-color: lightgrey;
+  color: #f50;
+}
+.search_results_a {
+  text-decoration: none;
+  color: white;
+}

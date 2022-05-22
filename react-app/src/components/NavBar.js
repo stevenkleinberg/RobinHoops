@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
 import LogoBottom from './icons/logoBottom';
@@ -11,6 +10,38 @@ import "./NavBar.css";
 
 const NavBar = () => {
   const sessionUser = useSelector((state) => state.session.user);
+  const rawPlayers = useSelector((state)=> state.players)
+  const rawTeams = useSelector((state)=> state.teams)
+  const teamsNoAll = {... rawTeams};
+  delete teamsNoAll["all"];
+  const playersNoAll = {...rawPlayers}
+  delete playersNoAll["all"]
+  const teams = Object.values(teamsNoAll)
+  const players = Object.values(playersNoAll)
+  const teamsAndPlayers = teams.concat(players)
+  console.log(teamsAndPlayers)
+  const [showResults, setShowResults] = useState(false);
+  const [searchInput, setSearchInput] = useState("");
+
+  useEffect(() => {
+    if (searchInput.length) {
+      setShowResults(true);
+    } else {
+      setShowResults(false);
+    }
+  }, [searchInput]);
+
+  useEffect(() => {
+    if (!showResults) return;
+
+    const closeResults = () => {
+      setShowResults(false);
+    };
+
+    document.addEventListener("click", closeResults);
+
+    return () => document.removeEventListener("click", closeResults);
+  }, [showResults]);
 
   return (
     <nav className="navbar">
@@ -26,7 +57,31 @@ const NavBar = () => {
             <input
               className="navbar_search"
               placeholder="Search"
-            />
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
+          />
+          {showResults && (
+            <div className="search_results">
+              <ul>
+                {teamsAndPlayers
+                  ?.filter((stock) => {
+                    const stockName = stock.name;
+                    const match = stockName.toLowerCase().includes(searchInput.toLowerCase())
+                    return match;
+                  })
+                  .map((stock) => (
+                    <li key={stock.id} className="flex-row search_results_li">
+                      <a
+                        href={teamsNoAll[stock.id] ? `/teams/${stock.id}` : `/players/${stock.id}`}
+                        className="search_results_a"
+                      >
+                        {stock.name}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          )}
           </div>
           <div className='navbar_links_container flex-row'>
 
