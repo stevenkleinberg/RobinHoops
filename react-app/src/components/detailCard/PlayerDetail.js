@@ -6,6 +6,11 @@ import PlayerChart from '../chart/PlayerChart';
 function PlayerDetail({ player }) {
     const team = useSelector(state => state.teams[player?.team_id])
     const floatPrice = parseFloat(player?.current_price);
+    const floatInit = parseFloat(player?.init_price)
+    const floatDifference = floatPrice - floatInit
+    const displayDifference = (floatDifference / 100).toFixed(2);
+    const floatPercentChange = ((floatDifference * 10000) / floatInit);
+    const displayPercentChange = (floatPercentChange / 100).toFixed(2);
     const displayPrice = (floatPrice / 100).toFixed(2);
     const floatPPG = parseFloat(player?.ppg);
     const displayPPG = (floatPPG / 100).toFixed(2);
@@ -17,7 +22,7 @@ function PlayerDetail({ player }) {
                     <div className='detailcard_header'>{player?.name}</div>
                     <div className='detailcard_number_box'>
                         <div className='current_price'>{"$" + displayPrice}</div>
-                        <div className='price_change'>-$0.89 (-3.49%) Today</div>
+                        <div className='price_change'>{`+$${displayDifference} (+${displayPercentChange}%)`}</div>
                     </div>
                 </div>
                 <div className='detailcard_top_right'>

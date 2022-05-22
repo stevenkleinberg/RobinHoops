@@ -5,6 +5,11 @@ import TeamChart from '../chart/TeamChart';
 
 function TeamDetailCard({ team }) {
     const floatPrice = parseFloat(team?.current_price);
+    const floatInit = parseFloat(team?.init_price)
+    const floatDifference = floatPrice - floatInit
+    const displayDifference = (floatDifference / 100).toFixed(2);
+    const floatPercentChange = ((floatDifference * 10000) / floatInit);
+    const displayPercentChange = (floatPercentChange / 100).toFixed(2);
     const displayPrice = (floatPrice / 100).toFixed(2);
     const wins = Math.ceil((team?.win_loss_ratio * team?.games_played) / 1000);
     const losses = team?.games_played - wins;
@@ -16,7 +21,7 @@ function TeamDetailCard({ team }) {
                     <div className='detailcard_header'>{team?.name}</div>
                     <div className='detailcard_number_box'>
                         <div className='current_price'>{"$" + displayPrice}</div>
-                        <div className='price_change'>-$0.89 (-3.49%) Today</div>
+                        <div className='price_change'>{`$${displayDifference} (${displayPercentChange}%)`}</div>
                     </div>
                 </div>
                 <div className='detailcard_top_right'>

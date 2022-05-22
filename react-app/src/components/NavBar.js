@@ -72,7 +72,7 @@ const NavBar = () => {
                   .map((stock) => (
                     <li key={stock.id} className="flex-row search_results_li">
                       <a
-                        href={teamsNoAll[stock.id] ? `/teams/${stock.id}` : `/players/${stock.id}`}
+                        href={playersNoAll[stock.id] && playersNoAll[stock.id].name == stock.name? `/players/${stock.id}` : `/teams/${stock.id}`}
                         className="search_results_a"
                       >
                         {stock.name}
