@@ -36,6 +36,7 @@ const NavBar = () => {
 
     const closeResults = () => {
       setShowResults(false);
+      setSearchInput("")
     };
 
     document.addEventListener("click", closeResults);
@@ -66,7 +67,7 @@ const NavBar = () => {
                 {teamsAndPlayers
                   ?.filter((stock) => {
                     const stockName = stock.name;
-                    const match = stockName.toLowerCase().includes(searchInput.toLowerCase())
+                    const match = stockName.toLowerCase().startsWith(searchInput.toLowerCase())
                     return match;
                   })
                   .map((stock) => (
@@ -86,7 +87,7 @@ const NavBar = () => {
           <div className='navbar_links_container flex-row'>
 
             <LogoutButton />
-            <a className="about_links flex-column" href='https://github.com/stevenkleinberg' target="_blank">
+            <a className="about_links flex-column" href='https://github.com/stevenkleinberg/RobinHoops' target="_blank">
               <img className='icon_img' src={GitHubLogo}></img>
             </a>
             <a className="about_links flex-column" href='https://www.linkedin.com/in/steven-kleinberg-ab7627212/' target="_blank">
@@ -103,7 +104,7 @@ const NavBar = () => {
           <NavLink to='/sign-up' exact={true} className="navlinks" activeClassName='active'>
             Sign Up
           </NavLink>
-          <a className="about_links flex-column" href='https://github.com/stevenkleinberg' target="_blank">
+          <a className="about_links flex-column" href='https://github.com/stevenkleinberg/RobinHoops' target="_blank">
             <img className='icon_img' src={GitHubLogo}></img>
           </a>
           <a className="about_links flex-column" href='https://www.linkedin.com/in/steven-kleinberg-ab7627212/' target="_blank">

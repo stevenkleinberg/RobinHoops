@@ -26,7 +26,7 @@ function ManageTeamStockBox({ teamStockInit, team, setIsOwned }) {
             setShares(e.target.value)
             setValue((parseFloat(team.current_price * e.target.value) / 100).toFixed(2))
         } else if (!buyMore && e.target.value >= teamStock.shares) {
-            errs.push(`Max Shares to Sell ${teamStock.shares}`)
+            errs.push(`Max Shares to Sell: ${teamStock.shares} shares`)
             setShares(0)
             setValue(0)
         }

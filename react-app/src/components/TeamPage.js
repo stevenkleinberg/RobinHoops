@@ -8,6 +8,11 @@ function TeamPage() {
     const { id }= useParams()
     const team = useSelector(state => state.teams[id])
 
+if(!team){
+    return(
+        <></>
+    )
+}
   return (
     <div className='homepage_container flex-row'>
             <div className='homepage_right flex-column'>
