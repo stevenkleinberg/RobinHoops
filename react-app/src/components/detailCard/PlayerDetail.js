@@ -22,7 +22,7 @@ function PlayerDetail({ player }) {
                     <div className='detailcard_header'>{player?.name}</div>
                     <div className='detailcard_number_box'>
                         <div className='current_price'>{"$" + displayPrice}</div>
-                        <div className='price_change'>{`+$${displayDifference} (+${displayPercentChange}%)`}</div>
+                        <div className='price_change'>{displayDifference > 0 ? `+$${displayDifference} (+${displayPercentChange}%)` : `$${displayDifference} (${displayPercentChange}%)`}</div>
                     </div>
                 </div>
                 <div className='detailcard_top_right'>
@@ -46,12 +46,8 @@ function PlayerDetail({ player }) {
                         <p className='info_detail'>{player?.games_played}</p>
                     </div>
                     <div className='info_column flex-column'>
-                        <p className='info_label'>Last Five</p>
-                        <p className='info_detail'> 11pts , 12pts, 18pts </p>
-                    </div>
-                    <div className='info_column flex-column'>
                         <p className='info_label'>Position</p>
-                        <p className='info_detail'>{"nope"}</p>
+                        <p className='info_detail'>{player?.position}</p>
                     </div>
                 </div>
             </div>

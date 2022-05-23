@@ -31,9 +31,16 @@ export default function PlayerTransactionBox({ player }) {
             if (playerStock.player_id == id) {
                 setPlayerStock(playerStock)
                 setIsOwned(true)
+                setShares(0)
+                setTotal(0)
             }
         })
     }, []);
+
+    useEffect(() => {
+        setShares(0)
+        setTotal(0)
+    },[isOwned])
 
     const handleShareChange = (e) => {
         const errs = [];

@@ -42,10 +42,10 @@ function UserDetail() {
         <div className='DetailCard_container flex-column'>
             <div className='detailcard_top flex-row'>
                 <div className='detailcard_top_left'>
-                    <div className='detailcard_header'>Portfollio</div>
+                    <div className='detailcard_header'>Portfolio</div>
                     <div className='detailcard_number_box'>
                         <div className='current_price'>{"$" + displayTotal}</div>
-                        <div className='price_change'>{`+$${displayDifference} (+${displayPercentChange}%)`}</div>
+                        <div className='price_change'>{displayDifference > 0 ? `+$${displayDifference} (+${displayPercentChange}%)` : `$${displayDifference} (${displayPercentChange}%)`}</div>
                     </div>
                 </div>
                 <div className='detailcard_top_right'>
