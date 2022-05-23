@@ -30,6 +30,7 @@ def get_games_by_day(day):
 
     for game in games_list:
         if game["date"]["end"]:
+            print("game is over")
             visitor = game["teams"]["visitors"]["id"]
             home = game["teams"]["home"]["id"]
             game_id = game["id"]
@@ -69,18 +70,20 @@ def get_player_stats_by_game_id(id):
             players[player_id] = { "id": player_id, "points": points}
     return players
 
-@scheduler.task('interval', id="hello", minutes=5)
+@scheduler.task('interval', id="hello", minutes=1)
 def scheduler_daily_updates():
     print("=========scheduled activity===========")
     today = datetime.today().date()
 
     teams_win_loss = get_games_by_day(str(today))
+    print(teams_win_loss)
     with scheduler.app.app_context():
         for team_tuple in teams_win_loss:
 
             team = Team.query.get(int(team_tuple[0]))
             if team:
                 if team.last_updated.date() < today:
+                    print(team.to_dict())
                     old_price = team.current_price
 
                     if team_tuple[1]:
@@ -100,12 +103,14 @@ def scheduler_daily_updates():
                         team.current_price = new_wlr * 200
                         team.price_history = team.price_history[0:-1] + ","+ str(team.win_loss_ratio )  + "}"
                     team.last_updated = datetime.today()
+                    db.session.commit()
 
 
                     teamstocks = TeamStock.query.filter_by(team_id=team.id)
                     if teamstocks:
                         for teamstock in teamstocks:
                             user = User.query.get(teamstock.user_id)
+                            print(user.username)
                             shares = teamstock.shares
                             current_price = team.current_price
                             orig_assets_val = user.assets_value
@@ -113,9 +118,8 @@ def scheduler_daily_updates():
                             num_to_add = int(shares * current_price)
                             new_val = (orig_assets_val - num_to_sub ) + num_to_add
                             user.assets_value = new_val
-                            playerstock.current_value = num_to_add
-
-
+                            teamstock.current_value = num_to_add
+                            db.session.commit()
 
         games = list(set([team_tuple[2] for team_tuple in teams_win_loss]))
 
@@ -127,7 +131,6 @@ def scheduler_daily_updates():
                 player = Player.query.get(int(stats["id"]))
                 if player:
                     if player.last_updated.date() < today:
-
                         old_price = player.current_price
                         new_points = ((float(player.ppg / 1000) *  float(player.games_played)) + float(stats["points"]))
                         new_games = player.games_played + 1
@@ -137,6 +140,7 @@ def scheduler_daily_updates():
                         player.current_price = new_ppg * 10
                         player.price_history = player.price_history[0:-1] + ","+ str(new_ppg * 10) + "}"
                         player.last_updated = datetime.today()
+                        db.session.commit()
 
 
                         playerstocks = PlayerStock.query.filter_by(player_id=player.id)
@@ -145,14 +149,14 @@ def scheduler_daily_updates():
                                 user = User.query.get(playerstock.user_id)
 
                                 shares = playerstock.shares
-                                current_price = playerstock.current_price
+                                current_price = player.current_price
                                 orig_assets_val = user.assets_value
                                 num_to_sub =(shares * old_price)
                                 num_to_add =(shares * current_price)
                                 new_val = orig_assets_val - num_to_sub + num_to_add
                                 user.assets_value = new_val
                                 playerstock.current_value = num_to_add
-        db.session.commit()
+                                db.session.commit()
 
 
     return "sucsess!"
