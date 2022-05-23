@@ -26,9 +26,16 @@ function TeamTransactionBox({ team }) {
             if( teamStock.team_id == id) {
                 setTeamStock(teamStock)
                 setIsOwned(true)
+
             }
         })
     }, []);
+
+    useEffect(() => {
+        setShares(0)
+        setTotal(0)
+    },[isOwned])
+
 
     const handleShareChange = (e) => {
         e.preventDefault()
@@ -37,6 +44,7 @@ function TeamTransactionBox({ team }) {
             if (e.target.value >= 0) {
                 setShares(e.target.value)
                 setTotal(floatPrice * e.target.value)
+
             }
         }else {
             errs.push(`Insufficient Funds: Max Purchase${parseInt(floatBalance / parseFloat(team.current_price)) } shares`)

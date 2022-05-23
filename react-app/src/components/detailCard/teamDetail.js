@@ -21,7 +21,7 @@ function TeamDetailCard({ team }) {
                     <div className='detailcard_header'>{team?.name}</div>
                     <div className='detailcard_number_box'>
                         <div className='current_price'>{"$" + displayPrice}</div>
-                        <div className='price_change'>{`$${displayDifference} (${displayPercentChange}%)`}</div>
+                        <div className='price_change'>{displayDifference > 0 ? `+$${displayDifference} (+${displayPercentChange}%)` : `$${displayDifference} (${displayPercentChange}%)`}</div>
                     </div>
                 </div>
                 <div className='detailcard_top_right'>
@@ -46,7 +46,7 @@ function TeamDetailCard({ team }) {
                     </div>
 
                     <div className='info_column flex-column'>
-                        <p className='info_label'>Hometown</p>
+                        <p className='info_label'>Location</p>
                         <p className='info_detail'>{team?.city}</p>
                     </div>
                 </div>
