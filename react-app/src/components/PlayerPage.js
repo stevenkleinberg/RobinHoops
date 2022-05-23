@@ -9,6 +9,11 @@ import PlayerTransactionBox from "./TransactionBox/PlayerTransactionBox";
 function PlayerPage() {
     const { id }= useParams()
     const player = useSelector(state => state.players[id])
+  if(!player){
+      return(
+        <></>
+      )
+  }
   return (
     <div className='homepage_container flex-row'>
             <div className='homepage_right flex-column'>

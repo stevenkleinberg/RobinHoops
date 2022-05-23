@@ -36,6 +36,7 @@ const NavBar = () => {
 
     const closeResults = () => {
       setShowResults(false);
+      setSearchInput("")
     };
 
     document.addEventListener("click", closeResults);
@@ -66,7 +67,7 @@ const NavBar = () => {
                 {teamsAndPlayers
                   ?.filter((stock) => {
                     const stockName = stock.name;
-                    const match = stockName.toLowerCase().includes(searchInput.toLowerCase())
+                    const match = stockName.toLowerCase().startsWith(searchInput.toLowerCase())
                     return match;
                   })
                   .map((stock) => (
