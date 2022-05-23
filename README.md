@@ -1,11 +1,11 @@
 # RobinHoops
 ## Overview
-RobinHoops is a stock trading platform that allows you to, invest in your real dreams, your hoopdreams. It is a clone of stock trading app RobinHood, but instead of buying and selling boring stocks you can buy sell your favorite NBA teams and players.
+[RobinHoops](https://robin-hoops.herokuapp.com/login) is a stock trading platform that allows you to, invest in your real dreams, your hoopdreams. It is a clone of stock trading app RobinHood, but instead of buying and selling boring stocks you can buy sell your favorite NBA teams and players.
 
 Put your NBA knowledge to the test! Buy low, sell high, and turn buckets into buckets of cash! 
 
 ## Architecture 
-RobinHooops runs on a React frontend with a Flask backend and a PostgreSQL as a database. The application also receives updates on the latest scores and stats from API-NBA, a third party API keeping your investments value and prices as current as possible. It also uses Plotly to visually represent the growth, decay, and history of NBA teams and players.
+[RobinHoops](https://robin-hoops.herokuapp.com/login) runs on a React frontend with a Flask backend and a PostgreSQL as a database. The application also receives updates on the latest scores and stats from API-NBA, a third party API keeping your investments value and prices as current as possible. It also uses Plotly to visually represent the growth, decay, and history of NBA teams and players.
 ## Technologies used
 **Frontend**
 
