@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 from app.models import db, Player
 
 
@@ -22,6 +23,8 @@ def seed_players():
             current_price=(int(player_dict["ppg"]) *10),
             price_history=[ int(price) for price in player_dict["price_history"]]
         )
+        if new_player.id == 963 or new_player.id == 548 or new_player.id == 124 :
+            new_player.last_updated = datetime(2022, 5, 21)
         db.session.add(new_player)
     db.session.commit()
 
