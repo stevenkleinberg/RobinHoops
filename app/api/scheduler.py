@@ -70,7 +70,7 @@ def get_player_stats_by_game_id(id):
             players[player_id] = { "id": player_id, "points": points}
     return players
 
-@scheduler.task('interval', id="hello", minutes=1)
+@scheduler.task('interval', id="hello", minutes=5)
 def scheduler_daily_updates():
     print("=========scheduled activity===========")
     today = datetime.today().date()
