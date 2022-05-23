@@ -43,16 +43,19 @@ Put your NBA knowledge to the test! Buy low, sell high, and turn buckets into bu
 ## Features
 ### Portfolio
 RobinHoops investors can view their portfolios balance, amount of change, percent of change, and a breakdown of their finances. On the Portfolio page investors can also directly access their player and team investments, as well as other investment opportunities around the league.  
-![portfolio](https://user-images.githubusercontent.com/94195000/169759595-d72d3866-d44b-49c4-b610-65dfb462f823.png)
+<img src="https://user-images.githubusercontent.com/94195000/169759595-d72d3866-d44b-49c4-b610-65dfb462f823.png" alt="drawing" width="600"/>
+
 
 
 ### Player Details
 Investors can view a players historical price data, scoring and position information, and value growth.
-![player_deets](https://user-images.githubusercontent.com/94195000/169759623-24570e4e-8210-4391-a291-fa4311f0c8bd.png)
+<img src="https://user-images.githubusercontent.com/94195000/169759623-24570e4e-8210-4391-a291-fa4311f0c8bd.png" alt="drawing" width="600"/>
+
 
 ### Team Details
 Investors can view a teams historical price data, record and league information, and value growth.
-![team_deets](https://user-images.githubusercontent.com/94195000/169759642-dae7c9b4-1ff6-4a72-b763-76ee1bf3136b.png)
+<img src="https://user-images.githubusercontent.com/94195000/169759642-dae7c9b4-1ff6-4a72-b763-76ee1bf3136b.png" width="600"/>
+
 
 ### Transactions
 Investors can freely transact within their means with the ability to buy into a Player or Team at their given price.  
@@ -60,29 +63,36 @@ Investors can freely transact within their means with the ability to buy into a 
  ******
  ***Players***
 - Buy shares of your favorite player
-- ![buy_player](https://user-images.githubusercontent.com/94195000/169759732-0cb19c70-f76a-43f6-b395-73bdb7a03720.png)
+- <img src="https://user-images.githubusercontent.com/94195000/169759732-0cb19c70-f76a-43f6-b395-73bdb7a03720.png" height="300"/>
+
 
 - Sell Shares
-- ![sell_player](https://user-images.githubusercontent.com/94195000/169759749-c78abbfb-83db-4a7c-a5e1-407be6dcdaac.png)
+- <img src="https://user-images.githubusercontent.com/94195000/169759749-c78abbfb-83db-4a7c-a5e1-407be6dcdaac.png" height="300"/>
+
 
 - Double down and buy even more!
-- ![player_buymore](https://user-images.githubusercontent.com/94195000/169759760-04a797df-0953-4be7-8374-f6f7ab1b6e66.png)
+- <img src="https://user-images.githubusercontent.com/94195000/169759760-04a797df-0953-4be7-8374-f6f7ab1b6e66.png" height="300"/>
 
-- 
+
+ 
  ***Teams***
 - Buy shares of your favorite Team
-- ![team_buy](https://user-images.githubusercontent.com/94195000/169759676-8adf376b-28b2-447b-82aa-0db47ce3b7bc.png)
+- <img src="https://user-images.githubusercontent.com/94195000/169759676-8adf376b-28b2-447b-82aa-0db47ce3b7bc.png" height="300"/>
+
 
 - Sell High!
-- ![team_sell](https://user-images.githubusercontent.com/94195000/169759703-f7a079ed-3ab2-4a17-95e2-d2edae3cb67a.png)
+- <img src="https://user-images.githubusercontent.com/94195000/169759703-f7a079ed-3ab2-4a17-95e2-d2edae3cb67a.png" height="300"/>
+
 
 - Double down and buy even more!
-- ![team_buymore](https://user-images.githubusercontent.com/94195000/169759720-751d29cd-fe30-49ee-acb1-190960719112.png)
+- <img src="https://user-images.githubusercontent.com/94195000/169759720-751d29cd-fe30-49ee-acb1-190960719112.png" height="300"/>
+
 
 
 ### Search
 Investors can quickly navigate to any player or team with the integrated search bar.
-![search_bar](https://user-images.githubusercontent.com/94195000/169759775-2588990d-707a-4322-9677-210ca47b5aaf.png)
+<img src="https://user-images.githubusercontent.com/94195000/169759775-2588990d-707a-4322-9677-210ca47b5aaf.png" alt="drawing" width="600"/>
+
 
 ## Link to Wiki docs
 
