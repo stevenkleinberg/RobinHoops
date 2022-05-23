@@ -2,9 +2,9 @@ import React from 'react'
 import Plot from 'react-plotly.js';
 
 function TeamChart({ team }) {
-    const history_string = team?.price_history.slice(1, (team.price_history.length - 1));
+    const history_string = team?.price_history.slice(1, (team.price_history.length -1 ));
     const history_string_array = history_string?.split(",");
-    const priceHistory = history_string_array?.map(price => (parseFloat(price) / 100).toFixed(2));
+    const priceHistory = history_string_array?.map(price => (parseFloat(price * 200 ) / 100).toFixed(2));
 
     const zeroIndexrange = [...(priceHistory ? priceHistory.keys() : [] )]
     const range = zeroIndexrange?.map(ind => ind + 1)
@@ -50,7 +50,7 @@ function TeamChart({ team }) {
                     type: 'line',
                     mode: 'lines+markers',
                     marker: { color: 'green' },
-                    hovertemplate: '<br><b>Price</b>: $%{y:.2f}' +
+                    hovertemplate: '<br><b>Price</b>: $%{y: .2f}' +
                         '<br><b>Games Played</b>: %{x}<br>',
                     name: ''
                 },
