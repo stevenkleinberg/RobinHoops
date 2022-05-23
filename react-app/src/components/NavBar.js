@@ -69,6 +69,27 @@ const NavBar = () => {
                     const stockName = stock.name;
                     const match = stockName.toLowerCase().startsWith(searchInput.toLowerCase())
                     return match;
+                  }).length ?
+                  teamsAndPlayers
+                  ?.filter((stock) => {
+                    const stockName = stock.name;
+                    const match = stockName.toLowerCase().startsWith(searchInput.toLowerCase())
+                    return match;
+                  }).map((stock) => (
+                    <li key={stock.id} className="flex-row search_results_li">
+                      <a
+                        href={playersNoAll[stock.id] && playersNoAll[stock.id].name == stock.name? `/players/${stock.id}` : `/teams/${stock.id}`}
+                        className="search_results_a"
+                      >
+                        {stock.name}
+                      </a>
+                    </li>
+                  )
+                  ) : teamsAndPlayers
+                  ?.filter((stock) => {
+                    const stockName = stock.name;
+                    const match = stockName.toLowerCase().includes(searchInput.toLowerCase())
+                    return match;
                   })
                   .map((stock) => (
                     <li key={stock.id} className="flex-row search_results_li">
@@ -79,7 +100,8 @@ const NavBar = () => {
                         {stock.name}
                       </a>
                     </li>
-                  ))}
+                  )
+                  )}
               </ul>
             </div>
           )}
