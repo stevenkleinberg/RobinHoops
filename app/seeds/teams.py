@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 from app.models import db, Team
 
 
@@ -24,6 +25,8 @@ def seed_teams():
             current_price=(int(team_dict["win_loss_ratio"]) * 200),
             price_history=[ int(price) for price in team_dict["price_history"]]
             )
+        if new_team.id == 11 or new_team.id == 8:
+            new_team.last_updated = datetime(2022, 5, 21)
         db.session.add(new_team)
 
     db.session.commit()
