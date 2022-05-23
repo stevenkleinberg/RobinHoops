@@ -9,19 +9,19 @@ RobinHooops runs on a React frontend with a Flask backend and a PostgreSQL as a 
 ## Technologies used
 **Frontend**
 
--   React
--   Redux
--   JavaScript
--   HTML
--   CSS
+-   [React](https://reactjs.org/)
+-   [Redux](https://redux.js.org/)
+-   [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+-   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 **Backend**
 
--   Flask
--   Python
--   PostgreSQL
--   SQLAlchemy
--  Flask APScheduler
+-   [Flask](https://flask.palletsprojects.com/en/2.1.x/)
+-   [Python](https://docs.python.org/3/)
+-   [PostgreSQL](https://www.postgresql.org/)
+-   [SQLAlchemy](https://www.sqlalchemy.org/)
+-  [Flask-APScheduler](https://viniciuschiele.github.io/flask-apscheduler/)
 
  
 **API**
