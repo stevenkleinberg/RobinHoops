@@ -20,6 +20,11 @@ function MyPlayersList({player_stocks}) {
 
         return () => document.removeEventListener("click", closeDropdown);
     }, [showDropdown]);
+  if (!player_stocks.length){
+    return (
+        <></>
+    )
+  }
   return (
     <div className='stocklist_players flex-column '>
             <div className='stockListHeader flex-row' onClick={openDropdown}>

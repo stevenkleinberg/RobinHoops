@@ -68,24 +68,24 @@ function UserDetail() {
                         <p className='info_label'>Assets</p>
                         <p className='info_detail'>{`$${displayAssets} (${assetPercent}%)`}</p>
                     </div>
-                    <div className='info_column flex-column'>
-                        <p className='info_label'>Largest Team Stake</p>
-                        {team_stocks.length > 0 && (
+                    {team_stocks.length > 0 && (
+                        <div className='info_column flex-column'>
+                            <p className='info_label'>Largest Team Stake</p>
                             <>
                                 <p className='info_detail'>{team_mostSharesCode}</p>
                                 <p className='info_detail'>{`$${team_mostSharesValue} (${team_mostShares.shares} shares)`}</p>
                             </>
-                        )}
-                    </div>
-                    <div className='info_column flex-column'>
-                        <p className='info_label'>Largest Player Stake</p>
-                        {player_stocks.length > 0 && (
+                        </div>
+                    )}
+                    {player_stocks.length > 0 && (
+                        <div className='info_column flex-column'>
+                            <p className='info_label'>Largest Player Stake</p>
                             <>
                                 <p className='info_detail'>{player_mostSharesName}</p>
                                 <p className='info_detail'>{`$${player_mostSharesValue} (${player_mostShares.shares} shares)`}</p>
                             </>
-                        )}
-                    </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

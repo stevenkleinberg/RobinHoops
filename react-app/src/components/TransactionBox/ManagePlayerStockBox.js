@@ -29,7 +29,7 @@ function ManagePlayerStockBox({ playerStockInit, player, setIsOwned }) {
             setShares(e.target.value)
             setValue((parseFloat(player.current_price * e.target.value) / 100).toFixed(2))
         } else if (!buyMore && e.target.value >= playerStock.shares) {
-            errs.push(`Max Shares to Sell ${playerStock.shares}`)
+            errs.push(`Max Shares to Sell:  ${playerStock.shares} shares`)
             setShares(0)
             setValue(0)
         }

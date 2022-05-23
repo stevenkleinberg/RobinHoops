@@ -12,6 +12,7 @@ function StockList() {
     const players = useSelector(state => state.players.all)
     const player_stocks = useSelector(state => state.session.user.player_stocks)
     const team_stocks = useSelector(state => state.session.user.team_stocks)
+    console.log("teamstocks", team_stocks)
     return (
         <div className='stocklist_container '>
             <div className='stocklist_body flex-column'>
