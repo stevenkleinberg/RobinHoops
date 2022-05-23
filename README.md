@@ -1,129 +1,89 @@
-# Flask React Project
+# RobinHoops
+## Overview
+RobinHoops is a stock trading platform that allows you to, invest in your real dreams, your hoopdreams. It is a clone of stock trading app RobinHood, but instead of buying and selling boring stocks you can buy sell your favorite NBA teams and players.
 
-This is the starter for the Flask React project.
+Put your NBA knowledge to the test! Buy low, sell high, and turn buckets into buckets of cash! 
 
-## Getting started
-1. Clone this repository (only this branch)
+## Architecture 
+RobinHooops runs on a React frontend with a Flask backend and a PostgreSQL as a database. The application also receives updates on the latest scores and stats from API-NBA, a third party API keeping your investments value and prices as current as possible. It also uses Plotly to visually represent the growth, decay, and history of NBA teams and players.
+## Technologies used
+**Frontend**
 
-   ```bash
-   git clone https://github.com/appacademy-starters/python-project-starter.git
-   ```
+-   React
+-   Redux
+-   JavaScript
+-   HTML
+-   CSS
 
-2. Install dependencies
+**Backend**
 
-      ```bash
-      pipenv install --dev -r dev-requirements.txt && pipenv install -r requirements.txt
-      ```
+-   Flask
+-   Python
+-   PostgreSQL
+-   SQLAlchemy
+-  Flask APScheduler
 
-3. Create a **.env** file based on the example with proper settings for your
-   development environment
-4. Setup your PostgreSQL user, password and database and make sure it matches your **.env** file
-
-5. Get into your pipenv, migrate your database, seed your database, and run your flask app
-
-   ```bash
-   pipenv shell
-   ```
-
-   ```bash
-   flask db upgrade
-   ```
-
-   ```bash
-   flask seed all
-   ```
-
-   ```bash
-   flask run
-   ```
-
-6. To run the React App in development, checkout the [README](./react-app/README.md) inside the `react-app` directory.
-
-***
+ 
+**API**
+- [NBA-API](https://rapidapi.com/api-sports/api/api-nba)
 
 
-*IMPORTANT!*
-   psycopg2-binary MUST remain a dev dependency because you can't install it on alpine-linux.
-   There is a layer in the Dockerfile that will install psycopg2 (not binary) for us.
-***
+## Setup
+1.  Clone this repository ( [https://github.com/stevenkleinberg/RobinHoops.git](https://github.com/stevenkleinberg/RobinHoops.git) )
+2.  Install dependencies -  `pipenv install --dev -r dev-requirements.txt && pipenv install -r requirements.txt`
+3.  Create a  `.env`  file based on the  **.env.example**  with proper settings required for the development environment
+4.  Setup PostgreSQL user, password and database and to make sure it matches the  **.env**  file
+5.  Get into pipenv, migrate the database, seed the database, and run the flask app using the following commands:
+    -   `pipenv shell`
+    -   `flask db upgrade`
+    -   `flask seed all`
+    -   `flask run`
+6.  To run the React App in development, checkout the  [README](https://github.com/stevenkleinberg/RobinHoops/blob/main/react-app/README.md)  inside the  `react-app`  directory.
 
-### Dev Containers (OPTIONAL for M1 Users)
-The following instructions detail an *optional* development setup for M1 Mac users having issues with the `psycopg` package.
+## Features
+### Portfolio
+RobinHoops investors can view their portfolios balance, amount of change, percent of change, and a breakdown of their finances. On the Portfolio page investors can also directly access their player and team investments, as well as other investment opportunities around the league.  
+![portfolio](https://user-images.githubusercontent.com/94195000/169759595-d72d3866-d44b-49c4-b610-65dfb462f823.png)
 
-1. Make sure you have the [Microsoft Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed. 
-2. Make sure you have [Docker](https://www.docker.com/products/docker-desktop/) installed on your computer. 
-3. Clone the repository (only this branch)
-   ```bash
-   git clone https://github.com/appacademy-starters/python-project-starter.git
-   ```
-4. Open the repo in VS Code. 
-5. Click "Open in Container" when VS Code prompts to open container in the bottom right hand corner. 
-6. **Be Patient!** The initial install will take a LONG time, it's building a container that has postgres preconfigured and even installing all your project dependencies. (For both flask and react!)
 
-   **Note:** This will take much less time on future starts because everything will be cached.
+### Player Details
+Investors can view a players historical price data, scoring and position information, and value growth.
+![player_deets](https://user-images.githubusercontent.com/94195000/169759623-24570e4e-8210-4391-a291-fa4311f0c8bd.png)
 
-7. Once everything is up, be sure to make a `.env` file based on `.env.example` in both the root directory and the *react-app* directory before running your app. You do not need a `DATABASE_URL` in the `.env` file if you are using this Docker setup for development - the URL is already set in the image (see `.devcontainer/Dockerfile` for the URL).
+### Team Details
+Investors can view a teams historical price data, record and league information, and value growth.
+![team_deets](https://user-images.githubusercontent.com/94195000/169759642-dae7c9b4-1ff6-4a72-b763-76ee1bf3136b.png)
 
-8. Get into your pipenv, migrate your database, seed your database, and run your flask app
+### Transactions
+Investors can freely transact within their means with the ability to buy into a Player or Team at their given price.  
+ 	
+ ******
+ ***Players***
+- Buy shares of your favorite player
+- ![buy_player](https://user-images.githubusercontent.com/94195000/169759732-0cb19c70-f76a-43f6-b395-73bdb7a03720.png)
 
-   ```bash
-   pipenv shell
-   ```
+- Sell Shares
+- ![sell_player](https://user-images.githubusercontent.com/94195000/169759749-c78abbfb-83db-4a7c-a5e1-407be6dcdaac.png)
 
-   ```bash
-   flask db upgrade
-   ```
+- Double down and buy even more!
+- ![player_buymore](https://user-images.githubusercontent.com/94195000/169759760-04a797df-0953-4be7-8374-f6f7ab1b6e66.png)
 
-   ```bash
-   flask seed all
-   ```
+- 
+ ***Teams***
+- Buy shares of your favorite Team
+- ![team_buy](https://user-images.githubusercontent.com/94195000/169759676-8adf376b-28b2-447b-82aa-0db47ce3b7bc.png)
 
-   ```bash
-   flask run
-   ```
+- Sell High!
+- ![team_sell](https://user-images.githubusercontent.com/94195000/169759703-f7a079ed-3ab2-4a17-95e2-d2edae3cb67a.png)
 
-9. To run the React App in development, checkout the [README](./react-app/README.md) inside the `react-app` directory.
+- Double down and buy even more!
+- ![team_buymore](https://user-images.githubusercontent.com/94195000/169759720-751d29cd-fe30-49ee-acb1-190960719112.png)
 
-<br>
 
-## Deploy to Heroku
-This repo comes configured with Github Actions. When you push to your main branch, Github will automatically pull your code, package and push it to Heroku, and then release the new image and run db migrations. 
+### Search
+Investors can quickly navigate to any player or team with the integrated search bar.
+![search_bar](https://user-images.githubusercontent.com/94195000/169759775-2588990d-707a-4322-9677-210ca47b5aaf.png)
 
-1. Write your Dockerfile. In order for the Github action to work effectively, it must have a configured Dockerfile. Follow the comments found in this [Dockerfile](./Dockerfile) to write your own!
+## Link to Wiki docs
 
-2. Create a new project on Heroku.
-
-3. Under Resources click "Find more add-ons" and add the add on called "Heroku Postgres".
-
-4. Configure production environment variables. In your Heroku app settings -> config variables you should have two environment variables set:
-
-   |    Key          |    Value    |
-   | -------------   | ----------- |
-   | `DATABASE_URL`  | Autogenerated when adding postgres to Heroku app |
-   | `SECRET_KEY`    | Random string full of entropy |
-
-5. Generate a Heroku OAuth token for your Github Action. To do so, log in to Heroku via your command line with `heroku login`. Once you are logged in, run `heroku authorizations:create`. Copy the GUID value for the Token key.
-
-6. In your Github Actions Secrets you should have two environment variables set. You can set these variables via your Github repository settings -> secrets -> actions. Click "New respository secret" to create
-each of the following variables:
-
-   |    Key            |    Value    |
-   | -------------     | ----------- |
-   | `HEROKU_API_KEY`  | Heroku Oauth Token (from step 6)|
-   | `HEROKU_APP_NAME` | Heroku app name    |
-
-7. Push to your `main` branch! This will trigger the Github Action to build your Docker image and deploy your application to the Heroku container registry. Please note that the Github Action will automatically upgrade your production database with `flask db upgrade`. However, it will *not* automatically seed your database. You must manually seed your production database if/when you so choose (see step 8).
-
-8. *Attention!* Please run this command *only if you wish to seed your production database*: `heroku run -a HEROKU_APP_NAME flask seed all`
-
-## Helpful commands
-|    Command            |    Purpose    |
-| -------------         | ------------- |
-| `pipenv shell`        | Open your terminal in the virtual environment and be able to run flask commands without a prefix |
-| `pipenv run`          | Run a command from the context of the virtual environment without actually entering into it. You can use this as a prefix for flask commands  |
-| `flask db upgrade`    | Check in with the database and run any needed migrations  |
-| `flask db downgrade`  | Check in with the database and revert any needed migrations  |
-| `flask seed all`      | Just a helpful syntax to run queries against the db to seed data. See the **app/seeds** folder for reference and more details |
-| `heroku login -i`      | Authenticate your heroku-cli using the command line. Drop the -i to authenticate via the browser |
-| `heroku authorizations:create` | Once authenticated, use this to generate an Oauth token |
-| `heroku run -a <app name>` | Run a command from within the deployed container on Heroku |
+[RobinHoops Wiki Docs](https://github.com/stevenkleinberg/RobinHoops/wiki)
