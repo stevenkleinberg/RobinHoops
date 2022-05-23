@@ -1,4 +1,4 @@
-# RobinHoops
+# [RobinHoops](https://robin-hoops.herokuapp.com/login)
 ## Overview
 [RobinHoops](https://robin-hoops.herokuapp.com/login) is a stock trading platform that allows you to, invest in your real dreams, your hoopdreams. It is a clone of stock trading app RobinHood, but instead of buying and selling boring stocks you can buy sell your favorite NBA teams and players.
 
