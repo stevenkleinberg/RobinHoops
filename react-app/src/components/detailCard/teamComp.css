@@ -35,17 +35,22 @@
 
 .detailcard_chartSection{
 
-    height: 400px;
+    height: 200px;
     width: 100%;
 }
-.chart{
+.chart_header{
 
     height: 100%;
     width:100%;
+    font-size: 32px;
+    font-weight:bold;
+    padding-bottom: 15px;
+
 }
 .about{
     /* border: 1px solid green; */
     margin-top: 35px;
+
 
 }
 .about_header{
