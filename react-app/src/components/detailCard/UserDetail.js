@@ -54,9 +54,9 @@ function UserDetail() {
                     </div>
                 </div>
             </div>
-            {/* <div className='detailcard_chartSection'>
-                <div className='chart'>chart</div>
-            </div> */}
+            <div className='detailcard_chartSection'>
+                <div className='chart_header'>Upcoming Games</div>
+            </div>
             <div className='about'>
                 <div className='about_header'>About</div>
                 <div className='about_info flex-row'>
