@@ -27,6 +27,7 @@ def get_games_by_day(day):
     games_list = json_dict["response"]
 
     teams_win_or_lose = []
+    teams_in_game_score = []
 
     for game in games_list:
         if game["date"]["end"]:
@@ -40,8 +41,17 @@ def get_games_by_day(day):
             else:
                 teams_win_or_lose.append((visitor, False, game_id))
                 teams_win_or_lose.append((home, True, game_id))
-
-    return teams_win_or_lose
+        else:
+            print("game in progress")
+            visitor = game["teams"]["visitors"]["id"]
+            home = game["teams"]["home"]["id"]
+            game_id = game["id"]
+            visitor_score = game["scores"]["visitors"]["points"]
+            home_score = game["scores"]["home"]["points"]
+            teams_in_game_score.append((visitor, visitor_score, game_id))
+            teams_in_game_score.append((home, home_score, game_id))
+            return [teams_in_game_score, 0]
+    return [teams_win_or_lose, 1]
 
 def get_player_stats_by_game_id(id):
     url = "https://api-nba-v1.p.rapidapi.com/players/statistics"
@@ -74,8 +84,13 @@ def get_player_stats_by_game_id(id):
 def scheduler_daily_updates():
     print("=========scheduled activity===========")
     today = datetime.today().date()
-
-    teams_win_loss = get_games_by_day(str(today))
+    res = get_games_by_day(str(today))
+    teams_win_loss = []
+    teams_scores = []
+    if res[1] == 1:
+        teams_win_loss = res[0]
+    else:
+        teams_scores = res[0]
     print(teams_win_loss)
     with scheduler.app.app_context():
         for team_tuple in teams_win_loss:
