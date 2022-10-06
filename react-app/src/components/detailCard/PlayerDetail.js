@@ -31,7 +31,7 @@ function PlayerDetail({ player }) {
                     </div>
                 </div>
             </div>
-            <div className='detailcard_chartSection'>
+            <div className='detailcard_chartSection flex-column'>
                 <PlayerChart player={player} />
             </div>
             <div className='about'>

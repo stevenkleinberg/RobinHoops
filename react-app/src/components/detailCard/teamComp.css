@@ -34,7 +34,7 @@
 }
 
 .detailcard_chartSection{
-
+    display: contents;
     height: 200px;
     width: 100%;
 }
